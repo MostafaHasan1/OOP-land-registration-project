@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+   <children>
+      <ImageView fitHeight="460.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/stone.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="236.0" layoutY="36.0" prefHeight="49.0" prefWidth="409.0" text="Bank Representative Dashboard">
+         <font>
+            <Font name="Georgia Italic" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
