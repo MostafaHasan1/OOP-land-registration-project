@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.BankRepresentativeSignUpSceneController">
    <effect>
       <Blend />
    </effect>
@@ -54,6 +54,11 @@
                      </font>
                   </Button>
                   <PasswordField layoutX="269.0" layoutY="191.0" promptText="Password" />
+                  <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="85.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/bank.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
         </items>
