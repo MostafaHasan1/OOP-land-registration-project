@@ -5,7 +5,6 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -70,24 +69,6 @@
             <Font name="Symbol" size="30.0" />
          </font>
       </Text>
-      <ToggleButton contentDisplay="RIGHT" layoutX="21.0" layoutY="451.0" mnemonicParsing="false">
-         <graphic>
-            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../home.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </ToggleButton>
-      <ToggleButton contentDisplay="RIGHT" layoutX="92.0" layoutY="451.0" mnemonicParsing="false">
-         <graphic>
-            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../back.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </ToggleButton>
       <Text layoutX="162.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the official land registration app of Bangladesh. Our aim is to help you exprience a hassle-free service as a property owner." wrappingWidth="730.13671875" />
       <ImageView fitHeight="105.0" fitWidth="124.0" layoutX="779.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
          <image>

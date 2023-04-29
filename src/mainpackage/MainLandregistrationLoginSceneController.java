@@ -45,7 +45,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
         // TODO
         chooseUsertypeComboBox.getItems().addAll(
                 // Moktar
-                "Lawyer","Tax assessor","Buyer", "Seller",
+                "Lawyer","UNO","Buyer", "Seller",
                 "Property Owner", "Government Official", "Surveyor",
                 "Bank representative"
         );
@@ -63,7 +63,14 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 lawyerMenuListStage.setTitle("Lawyer");
                 lawyerMenuListStage.setScene(lawyerMenuListScene);
                 lawyerMenuListStage.show();
-        /*    case "Tax assessor":
+            case "UNO":
+                Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNODashboardScene.fxml"));
+                Scene creating_sceneofUNOdashb = new Scene(UNOdashboard_Link);
+                Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                creating_stage_for_uno.setTitle("UNO dashboard");
+                creating_stage_for_uno.setScene(creating_sceneofUNOdashb);
+                creating_stage_for_uno.show();
+           /* case "Buyer":
                 Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
                 Scene lawyerMenuListScene = new Scene(lawyerMenuList);
                 Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -120,12 +127,12 @@ public class MainLandregistrationLoginSceneController implements Initializable {
 
     @FXML
     private void signupButtonOnClick(MouseEvent event) throws IOException {
-        Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("chooseUsertypeForSignup.fxml"));
-        Scene lawyerMenuListScene = new Scene(lawyerMenuList);
-        Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        lawyerMenuListStage.setTitle("Lawyer");
-        lawyerMenuListStage.setScene(lawyerMenuListScene);
-        lawyerMenuListStage.show();
+        Parent chooseUsertype_signup = FXMLLoader.load(getClass().getResource("chooseUsertypeForSignup.fxml"));
+        Scene chooseUsertype_signupScene = new Scene(chooseUsertype_signup);
+        Stage chooseUsertype_signupStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        chooseUsertype_signupStage.setTitle("Choose user type for signup");
+        chooseUsertype_signupStage.setScene(chooseUsertype_signupScene);
+        chooseUsertype_signupStage.show();
     }
 
     @FXML
