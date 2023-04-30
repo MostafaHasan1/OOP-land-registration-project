@@ -5,7 +5,10 @@
  */
 package mainpackage;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -31,9 +34,9 @@ public class MainLandregistrationLoginSceneController implements Initializable {
     @FXML
     private ComboBox<String> chooseUsertypeComboBox;
     @FXML
-    private TextField loginGmailIdField;
-    @FXML
     private PasswordField loginPasswordField;
+    @FXML
+    private TextField loginIDtxtF;
 
     /**
      * Initializes the controller class.
@@ -57,6 +60,41 @@ public class MainLandregistrationLoginSceneController implements Initializable {
         String selectedItem = chooseUsertypeComboBox.getSelectionModel().getSelectedItem().toString();
         switch(selectedItem){
             case "Lawyer":
+                /*Lawyer c = new Lawyer(
+                loginIDtxtF.getText(),
+                loginPasswordField.getText()    
+            );*/
+                File x = null;
+                FileInputStream fis = null;      
+                ObjectInputStream ois = null;
+                try {
+                    x = new File("LawyerLoginData.bin");
+                    fis = new FileInputStream(x);
+                    ois = new ObjectInputStream(fis);
+                    Lawyer l;
+                    try{
+                        //outputTextArea.setText("");
+                        while(true){
+                        //System.out.println("Printing objects.");
+                        l = (Lawyer)ois.readObject();
+                        //Object obj = ois.readObject();
+                        //obj.submitReport();
+                        //emp.submitReport();
+                        System.out.println(l.ID);
+                        System.out.println(l.pass);
+                        //outputTextArea.appendText(emp.toString());
+                        }
+                    }//end of nested try
+                    catch(Exception e){
+                    //
+                    }//nested catch     
+                    //outputTextArea.appendText("All objects are loaded successfully...\n");            
+                } catch (IOException ex) { } 
+                finally {
+                try {
+                    if(ois != null) ois.close();
+                } catch (IOException ex) { }
+                }
                 Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
                 Scene lawyerMenuListScene = new Scene(lawyerMenuList);
                 Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();

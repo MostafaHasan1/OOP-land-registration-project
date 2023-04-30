@@ -7,7 +7,6 @@ package mainpackage;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -26,11 +25,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -39,52 +35,40 @@ import javafx.stage.Stage;
  *
  * @author Hasan
  */
-public class LawyerSignupSceneController implements Initializable {
+public class UNOSignupSceneController implements Initializable {
 
-    @FXML    private TextField lawyerName;
-    @FXML    private TextField lawyerEmail;
-    @FXML    private TextField lawyerPhoneNumber;
-    @FXML    private TextField lawyerID;
-    @FXML    private TextField lawyerNIDnumber;
-    @FXML    private ComboBox<String> lawyerDivisionCombobox;
+    @FXML    private TextField nameTxtF;
+    @FXML    private DatePicker dobDatePker;
+    @FXML    private TextField NIDnumTxtF;
+    @FXML    private TextField IDtxtF;
     @FXML    private RadioButton maleRadioButton;
     @FXML    private RadioButton femaleRadioButton;
     @FXML    private RadioButton otherRadioButton;
-    @FXML    private TextField lawyerDistrict;
-    @FXML    private PasswordField lawyerPass;
-    @FXML    private DatePicker lawyerDOB;
-    @FXML    private TextField lawyerCourtName;
-    @FXML    private ComboBox<String> lawyerExperienceYearCombobox;
-    @FXML    private DatePicker lawyerDOJ;
-    //private String id;
-    //private String pass;
-    
-    
-    private ToggleGroup tg;
+    @FXML    private TextField UpazilaTxt;
+    @FXML    private TextField mobileNumTxtF;
+    @FXML    private DatePicker dojDatepker;
+    @FXML    private TextField mailTxtF;
+    @FXML    private TextField passTxtF;
+    @FXML    private ComboBox<String> divisonComboBox;
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        lawyerDivisionCombobox.getItems().addAll(
+        divisonComboBox.getItems().addAll(
                 "Barisal", "Chattogram", "Dhaka", "Khulna", 
                 "Mymensingh", "Rajshahi", "Rangpur", "Sylhet");
-        lawyerExperienceYearCombobox.getItems().addAll("1", "2", "3", "4", "5", "6+");
-        
-        tg = new ToggleGroup();
-        maleRadioButton.setToggleGroup(tg);
-        femaleRadioButton.setToggleGroup(tg);
-        otherRadioButton.setToggleGroup(tg);
     }    
 
     @FXML
-    private void lawyerSignupButtonOnClick(ActionEvent event) throws IOException {
+    private void singUpButtonOnClick(ActionEvent event) throws IOException {
         //creating a binary file for login parpose
         File f = null;
         FileOutputStream fos = null;      
         ObjectOutputStream oos = null;  
         try {
-            f = new File("LawyerLoginData.bin");
+            f = new File("UNoLoginData.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);                
@@ -93,42 +77,41 @@ public class LawyerSignupSceneController implements Initializable {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);               
             }
-            Lawyer l = new Lawyer(
-                lawyerID.getText(),
-                lawyerPass.getText()    
+            UNO u = new UNO(
+                IDtxtF.getText(),
+                passTxtF.getText()    
             );
-            oos.writeObject(l);
+            oos.writeObject(u);
 
         } catch (IOException ex) {
-            Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(UNOSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
                 if(oos != null) oos.close();
             } catch (IOException ex) {
-                Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(UNOSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        // -----------------------------------------------------------------
         
-        // for reading data from lawyeLoginData binary file          
+        // -----------------------------------------------------------------
+        // for reading data from UNoLoginData binary file          
         File x = null;
         FileInputStream fis = null;      
         ObjectInputStream ois = null;
         try {
-            x = new File("LawyerLoginData.bin");
+            x = new File("UNoLoginData.bin");
             fis = new FileInputStream(x);
             ois = new ObjectInputStream(fis);
-            Lawyer l;
+            UNO u;
             try{
                 //outputTextArea.setText("");
                 while(true){
                     //System.out.println("Printing objects.");
-                    l = (Lawyer)ois.readObject();
+                    u = (UNO)ois.readObject();
                     //Object obj = ois.readObject();
                     //obj.submitReport();
                     //emp.submitReport();
-                    System.out.println(l.ID);
-                    System.out.println(l.pass);
+                    System.out.println(u.ID);
                     //outputTextArea.appendText(emp.toString());
                 }
             }//end of nested try
@@ -142,8 +125,7 @@ public class LawyerSignupSceneController implements Initializable {
                 if(ois != null) ois.close();
             } catch (IOException ex) { }
         }
-                
-                
+        
         Alert a = new Alert(Alert.AlertType.INFORMATION);
         a.setTitle("Signup status");
         a.setContentText("Signup Successful");
@@ -155,13 +137,10 @@ public class LawyerSignupSceneController implements Initializable {
         creating_stage_for_mainLogScene.setTitle("Land Registration Main Scene");
         creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
         creating_stage_for_mainLogScene.show();
-            
     }
-        
-    
 
     @FXML
-    private void backButtononClick(MouseEvent event) throws IOException {
+    private void backButtonOnClick(MouseEvent event) throws IOException {
         Parent chooseUsertype_signup = FXMLLoader.load(getClass().getResource("chooseUsertypeForSignup.fxml"));
         Scene chooseUsertype_signupScene = new Scene(chooseUsertype_signup);
         Stage chooseUsertype_signupStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();

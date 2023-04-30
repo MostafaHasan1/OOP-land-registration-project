@@ -20,7 +20,7 @@
             <Image url="@../image/land_home.png" />
          </image>
       </ImageView>
-      <TextField fx:id="loginGmailIdField" layoutX="692.0" layoutY="40.0" prefHeight="27.0" prefWidth="177.0" promptText="Enter your id">
+      <TextField fx:id="loginIDtxtF" layoutX="692.0" layoutY="40.0" prefHeight="27.0" prefWidth="177.0" promptText="Enter your id">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
