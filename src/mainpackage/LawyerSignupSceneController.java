@@ -90,7 +90,8 @@ public class LawyerSignupSceneController implements Initializable {
                     lawyerPass.getText()
                     );
             oos.writeObject(lawyer);
-           /* idTxt.setText(null);    nameTxt.setText(null);  cgpaTxt.setText(null);  deptTxt.setText(null);*/
+           /*amin*/
+            /* idTxt.setText(null);    nameTxt.setText(null);  cgpaTxt.setText(null);  deptTxt.setText(null);*/
             lawyer.display();
 
         } catch (Exception ex) {
