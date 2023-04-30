@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.SurveyorsDashboardSceneController">
    <children>
-      <ImageView fitHeight="460.0" fitWidth="900.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="460.0" fitWidth="907.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/surlogo.jpg" />
          </image>
@@ -18,37 +18,32 @@
             <GaussianBlur radius="5.0" />
          </effect>
       </ImageView>
-      <Label alignment="CENTER" layoutX="260.0" layoutY="34.0" text="Surveyors Dashboard" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="152.0" layoutY="22.0" text="Welcome to Surveyors Dashboard" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Georgia Italic" size="36.0" />
          </font>
       </Label>
-      <Button layoutX="54.0" layoutY="125.0" mnemonicParsing="false" text="Set Boundaries of a Property">
+      <Button layoutX="550.0" layoutY="140.0" mnemonicParsing="false" onAction="#surveyorSetBoundaraiesButton" prefHeight="35.0" prefWidth="115.0" text="Set Boundaries">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="54.0" layoutY="204.0" mnemonicParsing="false" text="Valided all the Property Information">
+      <Button layoutX="176.0" layoutY="241.0" mnemonicParsing="false" onAction="#surveyorGiveAdviceButton" text="Give Advice about Land use and Regulations ">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="324.0" layoutY="125.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Title Report list ">
+      <Button layoutX="79.0" layoutY="379.0" mnemonicParsing="false" onAction="#SurveyorsBackButton" text="Sign Out">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="784.0" layoutY="396.0" mnemonicParsing="false" text="Sign Out">
+      <Button layoutX="522.0" layoutY="241.0" mnemonicParsing="false" onAction="#surveyorsAccountDetailsButton" prefHeight="35.0" prefWidth="181.0" text="Account details">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="562.0" layoutY="125.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="181.0" text="Update account details">
-         <font>
-            <Font name="Gabriola" size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="324.0" layoutY="204.0" mnemonicParsing="false" text="Show/Print all the Boundaries Details">
+      <Button layoutX="227.0" layoutY="140.0" mnemonicParsing="false" onAction="#surveyorClientReqButton" prefHeight="35.0" prefWidth="173.0" text="Client Requests">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>

@@ -142,21 +142,21 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
                 lawyerMenuListStage.setTitle("Lawyer");
                 lawyerMenuListStage.setScene(lawyerMenuListScene);
-                lawyerMenuListStage.show();
+                lawyerMenuListStage.show();*/
             case "Surveyor":
-                Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
-                Scene lawyerMenuListScene = new Scene(lawyerMenuList);
-                Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                lawyerMenuListStage.setTitle("Lawyer");
-                lawyerMenuListStage.setScene(lawyerMenuListScene);
-                lawyerMenuListStage.show();
+                Parent surveyorSignUp = FXMLLoader.load(getClass().getResource("SurveyorsDashboardScene.fxml"));
+                Scene surveyorSignUpScene = new Scene(surveyorSignUp);
+                Stage surveyorSignUpStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                surveyorSignUpStage.setTitle("Surveyor");
+                surveyorSignUpStage.setScene(surveyorSignUpScene);
+                surveyorSignUpStage.show();
             case "Bank representative":
-                Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
-                Scene lawyerMenuListScene = new Scene(lawyerMenuList);
-                Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                lawyerMenuListStage.setTitle("Lawyer");
-                lawyerMenuListStage.setScene(lawyerMenuListScene);
-                lawyerMenuListStage.show(); */
+                Parent bankDashBoard = FXMLLoader.load(getClass().getResource("Bank_DashBoard.fxml"));
+                Scene bankDashBoardScene = new Scene(bankDashBoard);
+                Stage bankDashBoardStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                bankDashBoardStage.setTitle("Bank representative");
+                bankDashBoardStage.setScene(bankDashBoardScene);
+                bankDashBoardStage.show();
             default :
                  System.out.println("Select your user type");
                           

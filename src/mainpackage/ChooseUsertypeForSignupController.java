@@ -77,12 +77,19 @@ public class ChooseUsertypeForSignupController implements Initializable {
                 creating_stage_for_uno.setScene(creating_sceneofUNOsignup);
                 creating_stage_for_uno.show();
             case "Surveyor":
-                Parent lawyerMenuList2 = FXMLLoader.load(getClass().getResource("SurveyorSignUpScene.fxml"));
-                Scene lawyerMenuListScene2 = new Scene(lawyerMenuList2);
-                Stage lawyerMenuListStage2  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                lawyerMenuListStage2.setTitle("Lawyer");
-                lawyerMenuListStage2.setScene(lawyerMenuListScene2);
-                lawyerMenuListStage2.show();
+                Parent surveyorSignUp = FXMLLoader.load(getClass().getResource("SurveyorSignUpScene.fxml"));
+                Scene surveyorSignUpScene2 = new Scene(surveyorSignUp);
+                Stage surveyorSignUpStage2  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                surveyorSignUpStage2.setTitle("Surveyor");
+                surveyorSignUpStage2.setScene(surveyorSignUpScene2);
+                surveyorSignUpStage2.show();
+            case "Bank representative":
+                Parent bankRepesentative = FXMLLoader.load(getClass().getResource("BankRepresentativeSignUpScene.fxml"));
+                Scene bankRepesentativeScene2 = new Scene(bankRepesentative);
+                Stage bankRepesentativeStage2  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                bankRepesentativeStage2.setTitle("Bank representative");
+                bankRepesentativeStage2.setScene(bankRepesentativeScene2);
+                bankRepesentativeStage2.show();
         }
     }
 
