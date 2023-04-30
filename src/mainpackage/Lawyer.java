@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 
-public final class Lawyer extends User implements Serializable, CheckLogin {
+public final class Lawyer extends User implements Serializable {
     /* protected String Name;
     protected int nid_num;
     protected String phone_number;
@@ -58,7 +58,7 @@ public final class Lawyer extends User implements Serializable, CheckLogin {
     public void display(){
         System.out.println("Id="+ID +", Passowrd="+pass);
     }
-    public void checkLogin(){
+    public void checkLogin(String ID, String pass){
         //if (ID.equals(Name))
     
     }
