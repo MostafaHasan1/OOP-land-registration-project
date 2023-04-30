@@ -73,6 +73,6 @@
             <Image url="@../image/bangladeshsarkarlogo.png" />
          </image>
       </ImageView>
-      <PasswordField fx:id="loginPasswordField" layoutX="692.0" layoutY="90.0" prefHeight="27.0" prefWidth="177.0" promptText="Enter you password" />
+      <PasswordField fx:id="loginPasswordField" layoutX="692.0" layoutY="90.0" prefHeight="27.0" prefWidth="177.0" promptText="Enter your password" />
    </children>
 </AnchorPane>

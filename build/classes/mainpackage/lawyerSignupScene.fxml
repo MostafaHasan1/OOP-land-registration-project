@@ -77,7 +77,12 @@
       <PasswordField fx:id="lawyerPass" layoutX="365.0" layoutY="130.0" prefHeight="33.0" prefWidth="170.0" promptText="password" />
       <DatePicker fx:id="lawyerDOB" layoutX="50.0" layoutY="220.0" prefHeight="33.0" prefWidth="170.0" promptText="Date of birth" />
       <TextField fx:id="lawyerCourtName" layoutX="365.0" layoutY="220.0" prefHeight="30.0" prefWidth="170.0" promptText="Court name" />
-      <DatePicker fx:id="lawyerDOB1" layoutX="365.0" layoutY="175.0" prefHeight="33.0" prefWidth="170.0" promptText="Date of join" />
+      <DatePicker fx:id="lawyerDOJ" layoutX="365.0" layoutY="175.0" prefHeight="33.0" prefWidth="170.0" promptText="Date of join" />
       <ComboBox fx:id="lawyerExperienceYearCombobox" layoutX="365.0" layoutY="265.0" prefHeight="33.0" prefWidth="170.0" promptText="Year of experience" />
+      <ImageView fitHeight="85.0" fitWidth="47.0" layoutX="733.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../image/bangladeshsarkarlogo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

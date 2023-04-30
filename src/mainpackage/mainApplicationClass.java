@@ -23,6 +23,7 @@ public class mainApplicationClass extends Application {
         
         Scene scene = new Scene(root);
         
+        stage.setTitle("Land Registration Main Scene");
         stage.setScene(scene);
         stage.show();
     }

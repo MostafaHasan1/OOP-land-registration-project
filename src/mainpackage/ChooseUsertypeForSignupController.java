@@ -16,6 +16,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -34,10 +36,9 @@ public class ChooseUsertypeForSignupController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         usertypeComboBox.getItems().addAll(
-                // Moktar
-                "Lawyer","Tax assessor","Buyer", "Seller",
-                "Property Owner", "Government Official", "Surveyor",
-                "Bank representative"
+                "Lawyer","UNO","Buyer", "Seller",
+                "Property Owner", "Government Official", 
+                "Surveyor", "Bank representative"
         );
     }
     /*private void handleSceneComboBoxAction(ActionEvent event) throws IOException {
@@ -68,6 +69,13 @@ public class ChooseUsertypeForSignupController implements Initializable {
                 lawyerMenuListStage1.setTitle("Lawyer");
                 lawyerMenuListStage1.setScene(lawyerMenuListScene1);
                 lawyerMenuListStage1.show();
+            case "UNO":
+                Parent UNOsignup_Link = FXMLLoader.load(getClass().getResource("UNOSignupScene.fxml"));
+                Scene creating_sceneofUNOsignup = new Scene(UNOsignup_Link);
+                Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                creating_stage_for_uno.setTitle("UNO singupScene");
+                creating_stage_for_uno.setScene(creating_sceneofUNOsignup);
+                creating_stage_for_uno.show();
             case "Surveyor":
                 Parent lawyerMenuList2 = FXMLLoader.load(getClass().getResource("SurveyorSignUpScene.fxml"));
                 Scene lawyerMenuListScene2 = new Scene(lawyerMenuList2);
@@ -76,5 +84,15 @@ public class ChooseUsertypeForSignupController implements Initializable {
                 lawyerMenuListStage2.setScene(lawyerMenuListScene2);
                 lawyerMenuListStage2.show();
         }
+    }
+
+    @FXML
+    private void backButtonOnClick(MouseEvent event) throws IOException {
+        Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
+        Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
+        Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        creating_stage_for_mainLogScene.setTitle("Land Registration Main Scene");
+        creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
+        creating_stage_for_mainLogScene.show();
     }
 }

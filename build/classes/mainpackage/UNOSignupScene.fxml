@@ -25,11 +25,16 @@
       </ImageView>
       <TextField layoutX="70.0" layoutY="150.0" prefHeight="33.0" prefWidth="161.0" promptText="Name" />
       <TextField layoutX="511.0" layoutY="200.0" prefHeight="33.0" prefWidth="161.0" promptText="Email" />
-      <DatePicker layoutX="346.0" layoutY="154.0" promptText="mm/dd/yy" />
-      <Label layoutX="265.0" layoutY="150.0" prefHeight="33.0" prefWidth="85.0" text="Date of birth :">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font></Label>
+      <Group layoutX="265.0" layoutY="150.0">
+         <children>
+            <DatePicker layoutX="81.0" layoutY="4.0" promptText="mm/dd/yy" />
+            <Label prefHeight="33.0" prefWidth="85.0" text="Date of birth :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
       <TextField layoutX="70.0" layoutY="300.0" prefHeight="33.0" prefWidth="161.0" promptText="NID number" />
       <TextField layoutX="70.0" layoutY="200.0" prefHeight="33.0" prefWidth="161.0" promptText="SE ID" />
       <TextField layoutX="511.0" layoutY="250.0" prefHeight="33.0" prefWidth="161.0" promptText="Password" />
@@ -57,5 +62,15 @@
          </font>
       </Label>
       <ImageView fitHeight="361.0" fitWidth="900.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+      <Group layoutX="545.0" layoutY="150.0">
+         <children>
+            <DatePicker layoutX="81.0" layoutY="4.0" promptText="mm/dd/yy" />
+            <Label prefHeight="33.0" prefWidth="85.0" text="Date of join :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
    </children>
 </AnchorPane>
