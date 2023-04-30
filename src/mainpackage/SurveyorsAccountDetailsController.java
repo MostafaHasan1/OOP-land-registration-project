@@ -20,9 +20,9 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Hasan
+ * @author akash
  */
-public class BankRepresentativeSignUpSceneController implements Initializable {
+public class SurveyorsAccountDetailsController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -33,12 +33,12 @@ public class BankRepresentativeSignUpSceneController implements Initializable {
     }    
 
     @FXML
-    private void bankSignUpBackButton(ActionEvent event) throws IOException {
-        Parent bankSignUpBackParent = FXMLLoader.load(getClass().getResource("chooseUsertypeForSignup.fxml"));
-        Scene bankSignUpBack = new Scene(bankSignUpBackParent);
+    private void SurveyorsAccountBackButton(ActionEvent event) throws IOException {
+        Parent SurveyorsAccountBackButtonParent = FXMLLoader.load(getClass().getResource("SurveyorsDashboardScene.fxml"));
+        Scene SurveyorsAccountBackButton = new Scene(SurveyorsAccountBackButtonParent);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setScene(bankSignUpBack);
-        window.show();
+        window.setScene(SurveyorsAccountBackButton);
+        window.show();   
     }
     
 }
