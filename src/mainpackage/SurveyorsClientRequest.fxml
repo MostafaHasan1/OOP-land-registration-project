@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpackage.SurveyorsClientRequestController">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.SurveyorsClientRequestController">
    <children>
       <ImageView fitHeight="460.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,8 +20,8 @@
       <TableView layoutX="98.0" layoutY="109.0" prefHeight="243.0" prefWidth="746.0">
         <columns>
           <TableColumn prefWidth="152.0" text="Name" />
-          <TableColumn minWidth="0.0" prefWidth="93.0" text="ID" />
-            <TableColumn minWidth="0.0" prefWidth="155.0" text="NID" />
+          <TableColumn minWidth="0.0" prefWidth="93.0" text="NID" />
+            <TableColumn minWidth="0.0" prefWidth="155.0" text="Land Number" />
             <TableColumn minWidth="0.0" prefWidth="177.0" text="Contact Number" />
             <TableColumn minWidth="0.0" prefWidth="166.0" text="Address" />
         </columns>

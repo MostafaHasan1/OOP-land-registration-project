@@ -63,12 +63,12 @@ public class MainLandregistrationLoginSceneController implements Initializable {
     @FXML
     private void loginButtonOnClick(ActionEvent event) throws IOException {
         String selectedItem = chooseUsertypeComboBox.getSelectionModel().getSelectedItem().toString();
-        switch(selectedItem){
-            case "Lawyer":
+            if(selectedItem=="Lawyer"){
                 /*Lawyer c = new Lawyer(
                 loginIDtxtF.getText(),
                 loginPasswordField.getText()    
-            );*/ 
+            );
+            */
                 String lawid = loginIDtxtF.getText();
                 String lawpass = loginPasswordField.getText();
                 ArrayList<String> idList = new ArrayList<String>();
@@ -128,17 +128,11 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     lawyerMenuListStage.setTitle("Lawyer");
                     lawyerMenuListStage.setScene(lawyerMenuListScene);
                     lawyerMenuListStage.show();
-                }if else(lawid==null && lawpass==null){
-                    Alert a = new Alert(Alert.AlertType.ERROR);
-                    a.setTitle("Login status");
-                    a.setContentText("Incorrect username or password. Please try again");
-                    a.setHeaderText(null);
-                    a.showAndWait();
                 }
-                    
+
                 
                 
-            case "UNO":
+            else if(selectedItem=="UNO"){
                 String unoID = loginIDtxtF.getText();
                 String unoPass = loginPasswordField.getText();
                 ArrayList<String> unoIDlist = new ArrayList<String>();
@@ -238,7 +232,8 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 bankDashBoardStage.setTitle("Bank representative");
                 bankDashBoardStage.setScene(bankDashBoardScene);
                 bankDashBoardStage.show();*/
-            default :
+                    }/*
+                default :
                 Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
                 Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
                 Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -246,7 +241,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
                 creating_stage_for_mainLogScene.show();
                           
-        }
+        }*/
     }
 
     @FXML
