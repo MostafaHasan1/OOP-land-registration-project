@@ -1,65 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/moinu/OneDrive/Desktop/new%20oop%20project/OOP-land-registration-project/src/mainpackage/PropertyOwnerDashboardController.java</file>
             <file>file:/C:/Users/moinu/OneDrive/Desktop/new%20oop%20project/OOP-land-registration-project/src/mainpackage/GovernmentOfficialDashboardController.java</file>
             <file>file:/C:/Users/moinu/OneDrive/Desktop/new%20oop%20project/OOP-land-registration-project/src/mainpackage/PropertyOwnerMarketplace.fxml</file>
-=======
-<<<<<<< HEAD
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/ChooseUsertypeForSignupController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/MainLandregistrationLoginSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankAccountDetailsController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/User.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/LawyerSignupSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/UNODashboardSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankMortgage.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsAdviceOnLandInfoController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/TaxCalculation.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankRepresentativeSignUpSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankTransaction.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankPropertyOwnerInfo.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/LawyerDashboardSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankLienInfoController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsAccountDetails.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsAdviceOnLandInfo.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsClientRequestController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankPropertyOwnerInfoController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/Lawyer.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/ForgotPassCompletemessegeSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsAccountDetailsController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorSignUpSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankMortgageController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsSetBoundaries.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsDashboardSceneController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsSetBoundariesController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankLienInfo.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/UNO.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsClientRequest.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankAccountDetails.fxml</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/Bank_DashBoardController.java</file>
-            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankTransactionController.java</file>
-=======
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/CheckLogin.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/LawyerDashboardSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/User.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/UNODashboardSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/mainApplicationClass.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/LawyerSignupSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/UNOSignupSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/TaxCalculation.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/MainLandregistrationLoginSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/ChooseUsertypeForSignupController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/Lawyer.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/BankRepresentativeSignUpSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/UNODashboardScene.fxml</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/AppendableObjectOutputStream.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/ForgotPassCompletemessegeSceneController.java</file>
-            <file>file:/C:/Users/Hasan/Desktop/New%20oop%20project%20clone/OOP-land-registration-project/src/mainpackage/UNO.java</file>
->>>>>>> 22bf63c2d494f1f7f2e0c76255467a6452610ca5
->>>>>>> a0fad74a346f27ef6dfbdca7f5e8b3d3535febfc
         </group>
     </open-files>
 </project-private>
