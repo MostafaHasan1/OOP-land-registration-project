@@ -354,15 +354,15 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
                 lawyerMenuListStage.setTitle("Lawyer");
                 lawyerMenuListStage.setScene(lawyerMenuListScene);
-                lawyerMenuListStage.show();
+                lawyerMenuListStage.show();*/
             case "Property Owner":
-                Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
-                Scene lawyerMenuListScene = new Scene(lawyerMenuList);
-                Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                lawyerMenuListStage.setTitle("Lawyer");
-                lawyerMenuListStage.setScene(lawyerMenuListScene);
-                lawyerMenuListStage.show();
-            case "Government Official":
+                Parent property_owner_dasboard = FXMLLoader.load(getClass().getResource("PropertyOwnerDashboard.fxml"));
+                Scene property_owner_dasboard_scene = new Scene(property_owner_dasboard);
+                Stage property_owner_dasboard_stage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                property_owner_dasboard_stage.setTitle("Property Owner");
+                property_owner_dasboard_stage.setScene(property_owner_dasboard_scene);
+                property_owner_dasboard_stage.show();
+            /*case "Government Official":
                 Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
                 Scene lawyerMenuListScene = new Scene(lawyerMenuList);
                 Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
