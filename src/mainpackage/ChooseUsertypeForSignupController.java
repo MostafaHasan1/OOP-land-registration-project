@@ -98,7 +98,7 @@ public class ChooseUsertypeForSignupController implements Initializable {
         Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
         Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
         Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        creating_stage_for_mainLogScene.setTitle("Land Registration Main Scene");
+        creating_stage_for_mainLogScene.setTitle("Welcome to digital land registration platform!");
         creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
         creating_stage_for_mainLogScene.show();
     }

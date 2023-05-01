@@ -149,6 +149,7 @@ public class LawyerSignupSceneController implements Initializable {
         a.setContentText("Signup Successful");
         a.setHeaderText(null);
         a.showAndWait();
+        
         Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
         Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
         Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -165,7 +166,7 @@ public class LawyerSignupSceneController implements Initializable {
         Parent chooseUsertype_signup = FXMLLoader.load(getClass().getResource("chooseUsertypeForSignup.fxml"));
         Scene chooseUsertype_signupScene = new Scene(chooseUsertype_signup);
         Stage chooseUsertype_signupStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        chooseUsertype_signupStage.setTitle("Choose user type for signup");
+        chooseUsertype_signupStage.setTitle("Welcome to digital land registration platform!");
         chooseUsertype_signupStage.setScene(chooseUsertype_signupScene);
         chooseUsertype_signupStage.show();
     }
