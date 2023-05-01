@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollBar layoutX="897.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="14.0" />
+      <Separator layoutX="149.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
+      <ImageView fitHeight="193.0" fitWidth="744.0" layoutX="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Banner-738x280_04.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="149.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../download.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="156.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Security Number" wrappingWidth="313.634765625">
+         <font>
+            <Font name="Symbol" size="30.0" />
+         </font>
+      </Text>
+      <ToggleButton contentDisplay="RIGHT" layoutX="14.0" layoutY="447.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton contentDisplay="RIGHT" layoutX="86.0" layoutY="445.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <MenuButton centerShape="false" layoutX="2.0" layoutY="311.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Others">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Notices" />
+            <MenuItem mnemonicParsing="false" text="Terms and Policies" />
+         </items>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuButton>
+      <MenuButton fx:id="LandMenuButton" centerShape="false" layoutX="2.0" layoutY="188.0" mnemonicParsing="false" onMouseDragged="#pop" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Land">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Land Information" />
+            <MenuItem mnemonicParsing="false" text="Land Registration" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="LandOwnerMenuButton" centerShape="false" layoutX="2.0" layoutY="213.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Land Owner">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Land Owner List" />
+            <MenuItem mnemonicParsing="false" text="Land Owner Details" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="2.0" layoutY="238.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Security">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Social Security Number" />
+            <MenuItem mnemonicParsing="false" text="User Access" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="2.0" layoutY="263.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Information">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Land Pricing " />
+            <MenuItem mnemonicParsing="false" text="Data Analysis" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="2.0" layoutY="288.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Documents">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Document Approval" />
+         </items>
+      </MenuButton>
+      <ScrollPane layoutX="163.0" layoutY="256.0" prefHeight="200.0" prefWidth="528.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="732.0">
+               <children>
+                  <TableView layoutX="-1.0" layoutY="-1.0" prefHeight="399.0" prefWidth="732.0">
+                    <columns>
+                      <TableColumn prefWidth="272.80003356933594" text="Name" />
+                      <TableColumn prefWidth="187.199951171875" text="NID number" />
+                        <TableColumn prefWidth="271.20001220703125" text="Social Security Number" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextArea layoutX="697.0" layoutY="256.0" prefHeight="200.0" prefWidth="200.0" text="This page contains the social &#10;security numbers of land owners&#10;for security purposes. " />
+   </children>
+</AnchorPane>

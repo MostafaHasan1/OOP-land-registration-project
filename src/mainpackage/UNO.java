@@ -18,7 +18,7 @@ public final class UNO extends User implements TaxCalculation, Serializable {
         this.upazila = upazila;
         this.doj = doj;
     }
-    // UNO parameter to use for login
+    // UNO parameter to use for loginData
     public UNO(String ID, String pass){
         this.ID = ID;
         this.pass = pass;
