@@ -24,10 +24,10 @@
          </font>
       </Label>
       <TextField layoutX="95.0" layoutY="96.0" promptText="Property Owner Name" />
-      <TextField layoutX="282.0" layoutY="96.0" promptText="ID" />
+      <TextField layoutX="282.0" layoutY="96.0" promptText="Land number" />
       <TextField layoutX="470.0" layoutY="96.0" promptText="Lenght" />
       <TextField layoutX="653.0" layoutY="96.0" promptText="Width" />
-      <TextField layoutX="95.0" layoutY="147.0" promptText="Area" />
+      <TextField layoutX="95.0" layoutY="147.0" promptText="Area in sft" />
       <TableView layoutX="162.0" layoutY="199.0" prefHeight="226.0" prefWidth="661.0">
         <columns>
           <TableColumn prefWidth="135.0" text="Property Owner Name" />

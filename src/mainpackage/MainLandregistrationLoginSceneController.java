@@ -63,7 +63,16 @@ public class MainLandregistrationLoginSceneController implements Initializable {
     @FXML
     private void loginButtonOnClick(ActionEvent event) throws IOException {
         String selectedItem = chooseUsertypeComboBox.getSelectionModel().getSelectedItem().toString();
+<<<<<<< HEAD
+            if(selectedItem=="Lawyer"){
+                /*Lawyer c = new Lawyer(
+                loginIDtxtF.getText(),
+                loginPasswordField.getText()    
+            );
+            */
+=======
         if(selectedItem == "Lawyer"){
+>>>>>>> 7cf4b0035d2853934ae4d4937adc20c75bda1dfc
                 String lawid = loginIDtxtF.getText();
                 String lawpass = loginPasswordField.getText();
                 ArrayList<String> idList = new ArrayList<String>();
@@ -273,6 +282,13 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     lawyerMenuListStage.setTitle("Lawyer");
                     lawyerMenuListStage.setScene(lawyerMenuListScene);
                     lawyerMenuListStage.show();
+<<<<<<< HEAD
+                }
+
+                
+                
+            else if(selectedItem=="UNO"){
+=======
                 }if else(lawid==null && lawpass==null){
                     Alert a = new Alert(Alert.AlertType.ERROR);
                     a.setTitle("Login status");
@@ -284,6 +300,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 
                 
       /*      case "UNO":
+>>>>>>> 7cf4b0035d2853934ae4d4937adc20c75bda1dfc
                 String unoID = loginIDtxtF.getText();
                 String unoPass = loginPasswordField.getText();
                 ArrayList<String> unoIDlist = new ArrayList<String>();
@@ -383,7 +400,12 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 bankDashBoardStage.setTitle("Bank representative");
                 bankDashBoardStage.setScene(bankDashBoardScene);
                 bankDashBoardStage.show();*/
+<<<<<<< HEAD
+                    }/*
+                default :
+=======
            /* default :
+>>>>>>> 7cf4b0035d2853934ae4d4937adc20c75bda1dfc
                 Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
                 Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
                 Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -391,8 +413,13 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
                 creating_stage_for_mainLogScene.show(); */
                           
+<<<<<<< HEAD
+        }*/
+    }
+=======
         }
     
+>>>>>>> 7cf4b0035d2853934ae4d4937adc20c75bda1dfc
 
     @FXML
     private void signupButtonOnClick(MouseEvent event) throws IOException {
