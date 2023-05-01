@@ -23,6 +23,7 @@ public class mainApplicationClass extends Application {
         
         Scene scene = new Scene(root);
         
+        stage.setTitle("Welcome to digital land registration platform!");
         stage.setScene(scene);
         stage.show();
     }
