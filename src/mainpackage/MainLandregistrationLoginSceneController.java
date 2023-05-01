@@ -68,7 +68,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 /*Lawyer c = new Lawyer(
                 loginIDtxtF.getText(),
                 loginPasswordField.getText()    
-            );*/
+            );*/ 
                 String lawid = loginIDtxtF.getText();
                 String lawpass = loginPasswordField.getText();
                 ArrayList<String> idList = new ArrayList<String>();
@@ -128,13 +128,15 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     lawyerMenuListStage.setTitle("Lawyer");
                     lawyerMenuListStage.setScene(lawyerMenuListScene);
                     lawyerMenuListStage.show();
-                }else{
+                }if else(lawid==null && lawpass==null){
                     Alert a = new Alert(Alert.AlertType.ERROR);
                     a.setTitle("Login status");
                     a.setContentText("Incorrect username or password. Please try again");
                     a.setHeaderText(null);
                     a.showAndWait();
                 }
+                    
+                
                 
             case "UNO":
                 String unoID = loginIDtxtF.getText();
