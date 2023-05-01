@@ -17,45 +17,6 @@
    <children>
       <ScrollBar layoutX="886.0" orientation="VERTICAL" prefHeight="495.0" prefWidth="14.0" />
       <Separator layoutX="148.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="7.0" />
-      <MenuButton centerShape="false" layoutY="332.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Others">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="210.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Information">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="235.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="News and Updates">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="260.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Ownership">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="285.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Registration">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="310.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Documents">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
       <ImageView fitHeight="189.0" fitWidth="734.0" layoutX="152.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../Banner-738x280_04.png" />
@@ -101,5 +62,42 @@
       <TextField layoutX="759.0" layoutY="269.0" prefHeight="25.0" prefWidth="117.0" />
       <TextField layoutX="759.0" layoutY="323.0" prefHeight="25.0" prefWidth="117.0" />
       <TextField layoutX="759.0" layoutY="373.0" prefHeight="25.0" prefWidth="117.0" />
+      <MenuButton centerShape="false" layoutX="1.0" layoutY="310.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Others">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Sell/Auction" />
+            <MenuItem mnemonicParsing="false" text="Marketplace" />
+         </items>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="1.0" layoutY="187.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Information">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Fines and Penalties" />
+            <MenuItem mnemonicParsing="false" text="Notices" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="1.0" layoutY="212.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="News and Updates">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Notices" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="1.0" layoutY="237.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Ownership">
+         <items>
+            <MenuItem mnemonicParsing="false" text="My Property" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="1.0" layoutY="287.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Documents">
+         <items>
+            <MenuItem mnemonicParsing="false" text="My Records" />
+            <MenuItem mnemonicParsing="false" text="My Transactions" />
+         </items>
+      </MenuButton>
+      <MenuButton centerShape="false" layoutX="1.0" layoutY="262.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Registration">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Apply for registration" />
+            <MenuItem mnemonicParsing="false" text="Case to Lawyer" />
+         </items>
+      </MenuButton>
    </children>
 </AnchorPane>

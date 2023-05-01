@@ -183,7 +183,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNODashboardScene.fxml"));
                     Scene creating_sceneofUNOdashb = new Scene(UNOdashboard_Link);
                     Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                    creating_stage_for_uno.setTitle("UNO dashboard");
+                    creating_stage_for_uno.setTitle("Welcome Upazila Nirbahi Officer Dashboard ");
                     creating_stage_for_uno.setScene(creating_sceneofUNOdashb);
                     creating_stage_for_uno.show();
                 }else{
@@ -355,7 +355,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 lawyerMenuListStage.setTitle("Lawyer");
                 lawyerMenuListStage.setScene(lawyerMenuListScene);
                 lawyerMenuListStage.show();*/
-            case "Property Owner":
+            /*case "Property Owner":
                 Parent property_owner_dasboard = FXMLLoader.load(getClass().getResource("PropertyOwnerDashboard.fxml"));
                 Scene property_owner_dasboard_scene = new Scene(property_owner_dasboard);
                 Stage property_owner_dasboard_stage  = (Stage) ((Node)event.getSource()).getScene().getWindow();

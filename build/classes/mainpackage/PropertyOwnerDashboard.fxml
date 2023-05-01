@@ -17,8 +17,8 @@
       <Separator layoutX="148.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
       <MenuButton centerShape="false" layoutY="319.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Others">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Sell/Auction" />
+            <MenuItem mnemonicParsing="false" text="Marketplace" />
          </items>
          <opaqueInsets>
             <Insets />
@@ -26,32 +26,30 @@
       </MenuButton>
       <MenuButton centerShape="false" layoutY="196.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Information">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Fines and Penalties" />
+            <MenuItem mnemonicParsing="false" text="Notices" />
          </items>
       </MenuButton>
       <MenuButton centerShape="false" layoutY="221.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="News and Updates">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Notices" />
          </items>
       </MenuButton>
       <MenuButton centerShape="false" layoutY="246.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Ownership">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="My Property" />
          </items>
       </MenuButton>
       <MenuButton centerShape="false" layoutY="271.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Registration">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Apply for registration" />
+            <MenuItem mnemonicParsing="false" text="Case to Lawyer" />
          </items>
       </MenuButton>
       <MenuButton centerShape="false" layoutY="296.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Documents">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="My Records" />
+            <MenuItem mnemonicParsing="false" text="My Transactions" />
          </items>
       </MenuButton>
       <ImageView fitHeight="193.0" fitWidth="744.0" layoutX="152.0" pickOnBounds="true" preserveRatio="true">
@@ -70,19 +68,19 @@
          </font>
       </Text>
       <Text layoutX="162.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the official land registration app of Bangladesh. Our aim is to help you exprience a hassle-free service as a property owner." wrappingWidth="730.13671875" />
-      <ImageView fitHeight="105.0" fitWidth="124.0" layoutX="779.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="424.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../call.png" />
+            <Image url="@../image/smart%20loog.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="77.0" fitWidth="205.0" layoutX="162.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="171.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../bdg.png" />
+            <Image url="@../image/land-logo.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="105.0" fitWidth="149.0" layoutX="450.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="698.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../smart%20loog.png" />
+            <Image url="@../image/hotline-logo.png" />
          </image>
       </ImageView>
    </children>

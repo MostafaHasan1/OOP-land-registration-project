@@ -127,6 +127,7 @@ public class LawyerSignupSceneController implements Initializable {
                     //Object obj = ois.readObject();
                     //obj.submitReport();
                     //emp.submitReport();
+                    System.out.println("Lawyer Data:");
                     System.out.println(l.ID);
                     System.out.println(l.pass);
                     //outputTextArea.appendText(emp.toString());
