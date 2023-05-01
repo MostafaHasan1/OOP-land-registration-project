@@ -111,7 +111,9 @@ public class UNOSignupSceneController implements Initializable {
                     //Object obj = ois.readObject();
                     //obj.submitReport();
                     //emp.submitReport();
+                    System.out.println("UNO Data: ");
                     System.out.println(u.ID);
+                    System.out.println(u.pass);
                     //outputTextArea.appendText(emp.toString());
                 }
             }//end of nested try
@@ -128,7 +130,7 @@ public class UNOSignupSceneController implements Initializable {
         
         Alert a = new Alert(Alert.AlertType.INFORMATION);
         a.setTitle("Signup status");
-        a.setContentText("Signup Successful");
+        a.setContentText("Signup Successful!");
         a.setHeaderText(null);
         a.showAndWait();
         Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
