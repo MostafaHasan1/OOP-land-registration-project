@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollBar layoutX="896.0" orientation="VERTICAL" prefHeight="473.0" prefWidth="14.0" />
+      <Separator layoutX="146.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="473.0" prefWidth="8.0" />
+      <ImageView fitHeight="190.0" fitWidth="779.0" layoutX="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Banner-738x280_04.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="149.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../download.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="169.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Properties" wrappingWidth="190.634765625">
+         <font>
+            <Font name="Symbol" size="30.0" />
+         </font>
+      </Text>
+      <ToggleButton contentDisplay="RIGHT" layoutX="18.0" layoutY="424.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton contentDisplay="RIGHT" layoutX="90.0" layoutY="422.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <Text layoutX="176.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties Owned">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="417.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Square Feet Owned">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="721.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Approx. Net Worth">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="178.0" layoutY="319.0" prefHeight="52.0" prefWidth="143.0" />
+      <TextArea layoutX="441.0" layoutY="318.0" prefHeight="52.0" prefWidth="143.0" />
+      <TextArea layoutX="726.0" layoutY="314.0" prefHeight="52.0" prefWidth="143.0" />
+      <Button layoutX="797.0" layoutY="412.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="82.0" text="Click Here" />
+      <Text layoutX="584.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Download detailed plans" wrappingWidth="201.7001953125">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="-1.0" layoutY="254.0" mnemonicParsing="false" onAction="#GoTransactions" prefHeight="29.0" prefWidth="152.0" text="My Transactions" />
+      <Button layoutX="-1.0" layoutY="421.0" mnemonicParsing="false" onAction="#GoMarketPlace" prefHeight="29.0" prefWidth="152.0" text="MarketPlace" />
+      <Button layoutX="-1.0" layoutY="392.0" mnemonicParsing="false" onAction="#GoApplyReg" prefHeight="29.0" prefWidth="152.0" text="Apply for registration" />
+      <Button layoutX="-1.0" layoutY="363.0" mnemonicParsing="false" onAction="#GoAuction" prefHeight="29.0" prefWidth="152.0" text="Sell/Auction" />
+      <Button layoutX="-1.0" layoutY="337.0" mnemonicParsing="false" onAction="#GoReqVer" prefHeight="29.0" prefWidth="152.0" text="Request Verification" />
+      <Button layoutX="-1.0" layoutY="279.0" mnemonicParsing="false" onAction="#GoFines" prefHeight="29.0" prefWidth="152.0" text="My Fines and Penalties" />
+      <Button layoutX="-1.0" layoutY="449.0" mnemonicParsing="false" onAction="#GoHelp" prefHeight="29.0" prefWidth="152.0" text="Help for registration" />
+      <Button layoutX="-8.0" layoutY="308.0" mnemonicParsing="false" onAction="#GoRegDoc" prefHeight="29.0" prefWidth="159.0" text="Property Registration Doc" />
+      <Button layoutX="-2.0" layoutY="197.0" mnemonicParsing="false" onAction="#GoProperties" prefHeight="29.0" prefWidth="152.0" text="My Properties" />
+      <Button layoutX="-2.0" layoutY="227.0" mnemonicParsing="false" onAction="#GoRecords" prefHeight="29.0" prefWidth="152.0" text="My Records" />
+      <Button layoutX="-2.0" layoutY="150.0" mnemonicParsing="false" onAction="#GoDashPropOwner" prefHeight="48.0" prefWidth="152.0" text="Home" />
+   </children>
+</AnchorPane>

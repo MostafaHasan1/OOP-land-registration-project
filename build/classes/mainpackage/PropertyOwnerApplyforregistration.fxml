@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollBar layoutX="896.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="14.0" />
+      <Separator layoutX="148.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
+      <ImageView fitHeight="193.0" fitWidth="744.0" layoutX="152.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Banner-738x280_04.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="149.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../download.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="173.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apply for registration" wrappingWidth="311.634765625">
+         <font>
+            <Font name="Symbol" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="186.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name:" />
+      <Text layoutX="391.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" />
+      <Text layoutX="186.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" />
+      <Text layoutX="362.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+880" />
+      <TextField layoutX="182.0" layoutY="276.0" />
+      <TextField layoutX="391.0" layoutY="276.0" />
+      <TextField layoutX="184.0" layoutY="343.0" />
+      <TextField layoutX="182.0" layoutY="404.0" />
+      <ComboBox layoutX="390.0" layoutY="343.0" prefWidth="150.0" />
+      <Text layoutX="186.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City/Area:" />
+      <Text layoutX="395.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land number" />
+      <TextField layoutX="391.0" layoutY="405.0" />
+      <Text layoutX="395.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District" />
+      <TextField layoutX="181.0" layoutY="463.0" />
+      <Text layoutX="185.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID number:" />
+      <Text layoutX="612.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Within 100 words please explain why would like to register the following land:" wrappingWidth="271.0" />
+      <TextArea layoutX="612.0" layoutY="272.0" prefHeight="218.0" prefWidth="271.0" />
+      <Text layoutX="397.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application type" />
+      <ComboBox layoutX="392.0" layoutY="459.0" prefWidth="150.0" />
+      <Button layoutX="1.0" layoutY="254.0" mnemonicParsing="false" onAction="#GoTransactions" prefHeight="29.0" prefWidth="152.0" text="My Transactions" />
+      <Button layoutX="1.0" layoutY="421.0" mnemonicParsing="false" onAction="#GoMarketPlace" prefHeight="29.0" prefWidth="152.0" text="MarketPlace" />
+      <Button layoutX="1.0" layoutY="392.0" mnemonicParsing="false" onAction="#GoApplyReg" prefHeight="29.0" prefWidth="152.0" text="Apply for registration" />
+      <Button layoutX="1.0" layoutY="363.0" mnemonicParsing="false" onAction="#GoAuction" prefHeight="29.0" prefWidth="152.0" text="Sell/Auction" />
+      <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" onAction="#GoReqVer" prefHeight="29.0" prefWidth="152.0" text="Request Verification" />
+      <Button layoutX="1.0" layoutY="279.0" mnemonicParsing="false" onAction="#GoFines" prefHeight="29.0" prefWidth="152.0" text="My Fines and Penalties" />
+      <Button layoutX="1.0" layoutY="449.0" mnemonicParsing="false" onAction="#GoHelp" prefHeight="29.0" prefWidth="152.0" text="Help for registration" />
+      <Button layoutX="-6.0" layoutY="308.0" mnemonicParsing="false" onAction="#GoRegDoc" prefHeight="29.0" prefWidth="159.0" text="Property Registration Doc" />
+      <Button layoutY="197.0" mnemonicParsing="false" onAction="#GoProperties" prefHeight="29.0" prefWidth="152.0" text="My Properties" />
+      <Button layoutY="227.0" mnemonicParsing="false" onAction="#GoRecords" prefHeight="29.0" prefWidth="152.0" text="My Records" />
+      <Button layoutY="150.0" mnemonicParsing="false" onAction="#GoDashPropOwner" prefHeight="48.0" prefWidth="152.0" text="Home" />
+   </children>
+</AnchorPane>

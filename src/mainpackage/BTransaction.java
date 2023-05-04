@@ -5,11 +5,13 @@
  */
 package mainpackage;
 
+import java.io.Serializable;
+
 /**
  *
  * @author akash
  */
-public class BTransaction {
+public class BTransaction implements Serializable {
     protected String name,ID,amount,TXID;
 
     public BTransaction() {
