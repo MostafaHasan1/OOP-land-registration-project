@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.LawyerTransactionSceneController">
+   <children>
+      <AnchorPane prefHeight="385.0" prefWidth="186.0" style="-fx-background-color: e3d5ca;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutY="86.0" mnemonicParsing="false" onAction="#dashbrdButtonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Dashboard" textFill="WHITE" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="113.0" mnemonicParsing="false" onAction="#casesButtonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Cases" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="140.0" mnemonicParsing="false" onAction="#clintMSGbuttonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Clint messages" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="30.0" layoutY="167.0" mnemonicParsing="false" onAction="#govNtcButtonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Government notices" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="40.0" layoutY="194.0" mnemonicParsing="false" onAction="#transactionButtonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Transaction" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="50.0" layoutY="221.0" mnemonicParsing="false" onAction="#queryButtonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Query" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="60.0" layoutY="248.0" mnemonicParsing="false" onAction="#profileButtonOnclick" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="275.0" mnemonicParsing="false" onAction="#signOutButtonOnclcik" prefHeight="27.0" prefWidth="188.0" style="-fx-border-color: e3d5ca; -fx-background-color: Black;" text="Signout" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="105.0" fitWidth="756.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/bdflag.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="317.0" layoutX="137.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/banner.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="transactionTableView" layoutX="461.0" layoutY="147.0" prefHeight="315.0" prefWidth="713.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn prefWidth="87.0" text="CASE ID" />
+          <TableColumn prefWidth="141.0" text="CASE TITLE" />
+            <TableColumn prefWidth="182.0" text="PAYMENT AMOUNT" />
+            <TableColumn prefWidth="176.0" text="PAYMENT DATE" />
+            <TableColumn prefWidth="131.0" text="PAYMENT STATUS" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="45.0" fitWidth="56.0" layoutX="735.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../image/bangladeshsarkarlogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -21,6 +21,7 @@ public class GovernmentOfficialDashboardController implements Initializable {
     @FXML
     private MenuButton LandMenuButton;
     
+    
 
     /**
      * Initializes the controller class.
