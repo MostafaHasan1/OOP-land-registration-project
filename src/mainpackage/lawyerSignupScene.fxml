@@ -57,7 +57,7 @@
       <TextField fx:id="lawyerName" layoutX="50.0" layoutY="40.0" prefHeight="33.0" prefWidth="170.0" promptText="Name" />
       <TextField fx:id="lawyerEmail" layoutX="365.0" layoutY="85.0" prefHeight="33.0" prefWidth="170.0" promptText="Email" />
       <TextField fx:id="lawyerPhoneNumber" layoutX="50.0" layoutY="130.0" prefHeight="33.0" prefWidth="170.0" promptText="Phone Number" />
-      <TextField fx:id="lawyerID" layoutX="365.0" layoutY="40.0" prefHeight="33.0" prefWidth="170.0" promptText="SE number" />
+      <TextField fx:id="lawyerID" layoutX="365.0" layoutY="40.0" prefHeight="33.0" prefWidth="170.0" promptText="SE ID" />
       <TextField fx:id="lawyerNIDnumber" layoutX="50.0" layoutY="85.0" prefHeight="33.0" prefWidth="170.0" promptText="NID Number" />
       <ComboBox fx:id="lawyerDivisionCombobox" layoutX="50.0" layoutY="175.0" prefHeight="33.0" prefWidth="170.0" promptText="Select Division" />
       <Button layoutX="473.0" layoutY="352.0" mnemonicParsing="false" onAction="#lawyerSignupButtonOnClick" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: DARKSEAGREEN;" text="Signup" />

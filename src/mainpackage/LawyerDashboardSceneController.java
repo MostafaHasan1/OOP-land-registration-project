@@ -44,31 +44,67 @@ public class LawyerDashboardSceneController implements Initializable {
 
     @FXML
     private void casesButtonOnclick(ActionEvent event) throws IOException {
+        Parent caseSceneURL = FXMLLoader.load(getClass().getResource("LawyerCasesScene.fxml"));
+        Scene lawyerCaseScene = new Scene(caseSceneURL);
+        Stage caseSceneStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        caseSceneStage.setTitle("Cases");
+        caseSceneStage.setScene(lawyerCaseScene);
+        caseSceneStage.show();
         
     }
 
     @FXML
     private void clintMessageButtonOnclick(ActionEvent event) throws IOException {
+        Parent clintMSgSceneURL = FXMLLoader.load(getClass().getResource("LawyerClintMegScene.fxml"));
+        Scene clintMsgScene = new Scene(clintMSgSceneURL);
+        Stage clintMsgStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        clintMsgStage.setTitle("Clint Messages");
+        clintMsgStage.setScene(clintMsgScene);
+        clintMsgStage.show();
         
     }
 
     @FXML
     private void governmentNoticesButtonOnclick(ActionEvent event) throws IOException {
+        Parent govNoticURL = FXMLLoader.load(getClass().getResource("LaywerGovNotcScene.fxml"));
+        Scene govNoticScene = new Scene(govNoticURL);
+        Stage govNoticStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        govNoticStage.setTitle("Government Notice");
+        govNoticStage.setScene(govNoticScene);
+        govNoticStage.show();
         
     }
 
     @FXML
     private void transactionButtonOnlick(ActionEvent event) throws IOException {
+        Parent transactionURL = FXMLLoader.load(getClass().getResource("LawyerTransactionScene.fxml"));
+        Scene transactionScene = new Scene(transactionURL);
+        Stage transactionSceneStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        transactionSceneStage.setTitle("Transaction");
+        transactionSceneStage.setScene(transactionScene);
+        transactionSceneStage.show();
         
     }
 
     @FXML
     private void queryButtonOnlick(ActionEvent event) throws IOException {
+        Parent querryURL = FXMLLoader.load(getClass().getResource("LawyerQueryScene.fxml"));
+        Scene querryScene = new Scene(querryURL);
+        Stage querryStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        querryStage.setTitle("Querry");
+        querryStage.setScene(querryScene);
+        querryStage.show();
         
     }
 
     @FXML
     private void profileButtonOnclick(ActionEvent event) throws IOException {
+        Parent profileURL = FXMLLoader.load(getClass().getResource("LawyerProfileScene.fxml"));
+        Scene profileScene = new Scene(profileURL);
+        Stage profileStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        profileStage.setTitle("Profile");
+        profileStage.setScene(profileScene);
+        profileStage.show();
         
     }
 
