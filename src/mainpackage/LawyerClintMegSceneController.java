@@ -5,7 +5,9 @@
  */
 package mainpackage;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -25,8 +27,6 @@ import javafx.stage.Stage;
  */
 public class LawyerClintMegSceneController implements Initializable {
 
-    @FXML
-    private TableView<?> caseTableView;
 
     /**
      * Initializes the controller class.
@@ -114,6 +114,35 @@ public class LawyerClintMegSceneController implements Initializable {
         creating_stage_for_mainLogScene.setTitle("Welcome to digital land registration platform!");
         creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
         creating_stage_for_mainLogScene.show();
+    }
+
+    @FXML
+    private void loadTable(ActionEvent event) throws IOException {
+        /*ObjectInputStream ois=null;
+         try {
+            PropertyOwnerPropList p;
+            ois = new ObjectInputStream(new FileInputStream("PropertyOwnerPropertyList.bin"));
+            p = (PropertyOwnerPropList) ois.readObject();
+            //s.display();
+            caseTableView.getItems().add(p);
+            //s = (Student) ois.readObject(); tableView.getItems().add(s);            
+            
+        } catch (Exception ex) {
+            try {
+                if(ois!=null)
+                    ois.close();
+            } 
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            ex.printStackTrace();
+        }*/
+        Parent caseSceneURL = FXMLLoader.load(getClass().getResource("propertyOwnerTable.fxml"));
+        Scene lawyerCaseScene = new Scene(caseSceneURL);
+        Stage caseSceneStage  = new Stage();//(Stage) ((Node)event.getSource()).getScene().getWindow();
+        caseSceneStage.setTitle("table");
+        caseSceneStage.setScene(lawyerCaseScene);
+        caseSceneStage.show();
     }
     
 }
