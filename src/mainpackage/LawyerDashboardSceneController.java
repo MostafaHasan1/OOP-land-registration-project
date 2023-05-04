@@ -5,14 +5,21 @@
  */
 package mainpackage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,27 +28,53 @@ import javafx.scene.control.ListView;
  */
 public class LawyerDashboardSceneController implements Initializable {
 
-    @FXML    private ListView<String> lawyerEventList;
+    private ListView<String> lawyerEventList;
     @FXML    private Label counterOf_inprogress;
     @FXML    private Label counterOf_inpainding;
     
-    String[] LawyerEventList = {"Dashboard", "Cases", "Clint messeages",
-                                "Government notices", "Transaction", "Query", "Profile", "Sing out"};
-    String selectedListEvent;
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        lawyerEventList.getItems().addAll(LawyerEventList);
-        lawyerEventList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>(){
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-              selectedListEvent =   lawyerEventList.getSelectionModel().getSelectedItem();
-              if(selectedListEvent.equals("Dashboard")){
-                  System.out.println("Hi");
-              }
-            }
-            
-        });
+        
     }    
+
+    @FXML
+    private void dashboardButtonOnClick(ActionEvent event) throws IOException {
+        Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
+        Scene lawyerMenuListScene = new Scene(lawyerMenuList);
+        Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        lawyerMenuListStage.setTitle("Welcome to Lawyer Dashboard!");
+        lawyerMenuListStage.setScene(lawyerMenuListScene);
+        lawyerMenuListStage.show();
+    }
+
+    @FXML
+    private void casesButtonOnclick(ActionEvent event) {
+    }
+
+    @FXML
+    private void clintMessageButtonOnclick(ActionEvent event) {
+    }
+
+    @FXML
+    private void governmentNoticesButtonOnclick(ActionEvent event) {
+    }
+
+    @FXML
+    private void transactionButtonOnlick(ActionEvent event) {
+    }
+
+    @FXML
+    private void queryButtonOnlick(ActionEvent event) {
+    }
+
+    @FXML
+    private void profileButtonOnclick(ActionEvent event) {
+    }
+
+    @FXML
+    private void signoutButtonOnclick(ActionEvent event) {
+    }
     
 }
