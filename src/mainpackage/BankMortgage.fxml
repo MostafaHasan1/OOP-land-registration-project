@@ -30,9 +30,9 @@
       <TableView fx:id="liTableView" layoutX="163.0" layoutY="218.0" prefHeight="200.0" prefWidth="598.0">
         <columns>
           <TableColumn fx:id="tableName" prefWidth="152.0" text="Name" />
-          <TableColumn fx:id="tableId" prefWidth="125.0" text="ID" />
-            <TableColumn fx:id="tableOwnerValue" prefWidth="190.0" text="Owned Property Value" />
-            <TableColumn fx:id="tableLIenAmount" prefWidth="130.0" text="Loan Amount" />
+          <TableColumn fx:id="tableId" prefWidth="132.79998779296875" text="ID" />
+            <TableColumn fx:id="tablePropertyValue" prefWidth="193.60000610351562" text="Owned Property Value" />
+            <TableColumn fx:id="tableLIenAmount" prefWidth="121.5999755859375" text="Loan Amount" />
         </columns>
       </TableView>
       <Button layoutX="279.0" layoutY="166.0" mnemonicParsing="false" onAction="#AddMortgageListButton" prefHeight="31.0" prefWidth="149.0" text="Add to Mortgage List" />

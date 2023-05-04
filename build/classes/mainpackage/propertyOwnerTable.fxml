@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.PropertyOwnerTableController">
+   <children>
+      <TableView fx:id="proListTable" layoutX="105.0" layoutY="54.0" prefHeight="296.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameCal" prefWidth="75.0" text="Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

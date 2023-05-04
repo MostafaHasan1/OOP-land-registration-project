@@ -79,8 +79,35 @@ public class LawyerSignupSceneController implements Initializable {
 
     @FXML
     private void lawyerSignupButtonOnClick(ActionEvent event) throws IOException {
+        File f = null;
+        FileOutputStream fos = null;      
+        ObjectOutputStream oos = null;
         
-        if(lawyerName.getText().isEmpty() && lawyerEmail.getText().isEmpty() && lawyerPhoneNumber.getText().isEmpty() && lawyerID.getText().isEmpty()||
+        try {
+            f = new File("lawlogin.bin");
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);                
+            }
+            else{
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);               
+            }
+            Lawyer stud = new Lawyer(  
+                    
+                    lawyerID.getText(),
+                    
+                    lawyerPass.getText()
+                     
+                );
+            oos.writeObject(stud);
+       
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        
+       /* if(lawyerName.getText().isEmpty() && lawyerEmail.getText().isEmpty() && lawyerPhoneNumber.getText().isEmpty() && lawyerID.getText().isEmpty()||
           lawyerDOJ.getValue().toString().isEmpty() && lawyerDistrict.getText().isEmpty() && lawyerPass.getText().isEmpty() && 
           lawyerDOB.getValue().toString().isEmpty() && lawyerNIDnumber.getText().isEmpty()){
         Alert a = new Alert(Alert.AlertType.ERROR);
@@ -90,7 +117,39 @@ public class LawyerSignupSceneController implements Initializable {
         a.showAndWait();
         
      }else{
-            File f = null;
+        File f = null;
+        FileOutputStream fos = null;      
+        ObjectOutputStream oos = null;  
+        try {
+            f = new File("LawyerLoginData.bin");
+            if(f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);                
+            }
+            else{
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);               
+            }
+            Lawyer l = new Lawyer(
+                lawyerID.getText(),
+                lawyerPass.getText()    
+            );
+            oos.writeObject(l);
+
+        } catch (IOException ex) {
+            Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if(oos != null) oos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        
+            
+            
+            
+        /*File f = null;
         FileOutputStream fos = null;      
         ObjectOutputStream oos = null;  
         try {
@@ -120,7 +179,7 @@ public class LawyerSignupSceneController implements Initializable {
         }
         // -----------------------------------------------------------------
         
-        // for reading data from lawyeLoginData binary file          
+      /*  // for reading data from lawyeLoginData binary file          
         File x = null;
         FileInputStream fis = null;      
         ObjectInputStream ois = null;
@@ -154,10 +213,74 @@ public class LawyerSignupSceneController implements Initializable {
             } catch (IOException ex) { }
         }
         
-        }
+        } */
         
         //creating a binary file for login parpose
-        File f = null;
+       /* File lawf = null;
+        FileOutputStream lawfos = null;      
+        ObjectOutputStream lawoos = null;  
+        try {
+            lawf = new File("LawyerLoginData.bin");
+            if(lawf.exists()){
+                lawfos = new FileOutputStream(lawf,true);
+                lawoos = new AppendableObjectOutputStream(lawfos);                
+            }
+            else{
+                lawfos = new FileOutputStream(lawf);
+                lawoos = new ObjectOutputStream(lawfos);               
+            }
+            Lawyer l = new Lawyer(
+                lawyerID.getText(),lawyerPass.getText()   
+            );
+            lawoos.writeObject(l);
+
+        } catch (IOException ex) {
+            Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if(lawoos != null) lawoos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        // -----------------------------------------------------------------
+        
+        // for reading data from lawyeLoginData binary file          
+      /*  File x = null;
+        FileInputStream fis = null;      
+        ObjectInputStream ois = null;
+        try {
+            x = new File("LawyerLoginData.bin");
+            fis = new FileInputStream(x);
+            ois = new ObjectInputStream(fis);
+            Lawyer l;
+            try{
+                //outputTextArea.setText("");
+                while(true){
+                    //System.out.println("Printing objects.");
+                    l = (Lawyer)ois.readObject();
+                    //Object obj = ois.readObject();
+                    //obj.submitReport();
+                    //emp.submitReport();
+                    System.out.println("Lawyer Data:");
+                    System.out.println(l.ID);
+                    System.out.println(l.pass);
+                    //outputTextArea.appendText(emp.toString());
+                }
+            }//end of nested try
+            catch(Exception e){
+                //
+            }//nested catch     
+            //outputTextArea.appendText("All objects are loaded successfully...\n");            
+        } catch (IOException ex) { } 
+        finally {
+            try {
+                if(ois != null) ois.close();
+            } catch (IOException ex) { }
+        }*/
+        
+        //creating a binary file for login parpose
+    /*    File f = null;
         FileOutputStream fos = null;      
         ObjectOutputStream oos = null;  
         try {
@@ -219,8 +342,7 @@ public class LawyerSignupSceneController implements Initializable {
             try {
                 if(ois != null) ois.close();
             } catch (IOException ex) { }
-        }
-        
+        }*/
                 
                 
         Alert a = new Alert(Alert.AlertType.INFORMATION);
@@ -237,6 +359,7 @@ public class LawyerSignupSceneController implements Initializable {
         creating_stage_for_mainLogScene.show();
             
     }
+    
         
     
 

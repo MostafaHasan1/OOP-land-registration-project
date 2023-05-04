@@ -5,11 +5,13 @@
  */
 package mainpackage;
 
+import java.awt.Color;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,11 +22,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Cell;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 /**
@@ -49,18 +55,19 @@ public class BankMortgageController implements Initializable {
     @FXML
     private TableColumn<BankMortgage, String> tableId;
     @FXML
-    private TableColumn<BankMortgage, String> tableOwnerValue;
-    @FXML
     private TableColumn<BankMortgage, String> tableLIenAmount;
+    @FXML
+    private TableColumn<BankMortgage, String> tablePropertyValue;
 
     /**
      * Initializes the controller class.
+     * @param url
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         tableName.setCellValueFactory(new PropertyValueFactory<BankMortgage,String>("Name"));
         tableId.setCellValueFactory(new PropertyValueFactory<BankMortgage,String>("ID"));
-        tableOwnerValue.setCellValueFactory(new PropertyValueFactory<BankMortgage,String>("Amount"));
+        tablePropertyValue.setCellValueFactory(new PropertyValueFactory<BankMortgage,String>("Amount"));
         tableLIenAmount.setCellValueFactory(new PropertyValueFactory<BankMortgage,String>("Loan"));
     }    
 
@@ -78,8 +85,9 @@ public class BankMortgageController implements Initializable {
         BankMortgage li = new BankMortgage(bankMorgageName.getText(),bankMorgageId.getText(),bankMorgageValue.getText(),bankMortgageLoan.getText()
                                     );
         liTableView.getItems().add(0,li);
+        System.out.println(liTableView.getItems().toString());
     
-        File ba = null;
+            File ba = null;
             FileOutputStream fos = null;      
             ObjectOutputStream oos = null;  
             try{
@@ -92,13 +100,14 @@ public class BankMortgageController implements Initializable {
                 fos = new FileOutputStream(ba);
                 oos = new ObjectOutputStream(fos);               
             }
-            BTransaction b = new BTransaction(
+            BankMortgage b = new BankMortgage(
                  bankMorgageName.getText(),
                  bankMorgageId.getText(),
                  bankMorgageValue.getText(),
-                 bankMortgageLoan.getText()   
+                 bankMortgageLoan.getText()
+                   
             );
-            oos.writeObject(b);
+                 oos.writeObject(b);
 
         } catch (IOException ex) {
            Logger.getLogger(BankRepresentativeSignUpSceneController.class.getName()).log(Level.SEVERE, null, ex);
@@ -113,6 +122,6 @@ public class BankMortgageController implements Initializable {
 
     @FXML
     private void AddMortgagePDFButton(ActionEvent event) {
-    }
-  
+
+}
 }

@@ -5,8 +5,11 @@
  */
 package mainpackage;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,7 +18,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 /**
@@ -25,25 +30,32 @@ import javafx.stage.Stage;
  */
 public class LawyerCasesSceneController implements Initializable {
 
-    @FXML
-    private TableView<?> caseTableView;
+    @FXML    private TableView<PropertyOwnerPropList> caseTableView;
+    @FXML    private TableColumn<PropertyOwnerPropList, String> idColumn;
+    @FXML    private TableColumn<PropertyOwnerPropList, String> nameColum;
+    @FXML    private TableColumn<PropertyOwnerPropList, String> caseType;
+    @FXML    private TableColumn<PropertyOwnerPropList, String> caseDetails;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        idColumn.setCellValueFactory(new PropertyValueFactory<PropertyOwnerPropList,String>("caseID"));
+        nameColum.setCellValueFactory(new PropertyValueFactory<PropertyOwnerPropList,String>("clintName"));
+        caseType.setCellValueFactory(new PropertyValueFactory<PropertyOwnerPropList,String>("caseType"));
+        caseDetails.setCellValueFactory(new PropertyValueFactory<PropertyOwnerPropList,String>("caseDetails"));
+        
     }    
 
     @FXML
     private void dshboardButtonOnclick(ActionEvent event) throws IOException {
-        Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
-        Scene lawyerMenuListScene = new Scene(lawyerMenuList);
-        Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        lawyerMenuListStage.setTitle("Welcome to Lawyer Dashboard!");
-        lawyerMenuListStage.setScene(lawyerMenuListScene);
-        lawyerMenuListStage.show();
+        Parent caseSceneURL = FXMLLoader.load(getClass().getResource("LawyerdashboardScene.fxml"));
+        Scene lawyerCaseScene = new Scene(caseSceneURL);
+        Stage caseSceneStage  = new Stage();//(Stage) ((Node)event.getSource()).getScene().getWindow();
+        caseSceneStage.setTitle("DashBoard");
+        caseSceneStage.setScene(lawyerCaseScene);
+        caseSceneStage.show();
     }
 
     @FXML

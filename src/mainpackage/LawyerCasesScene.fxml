@@ -71,10 +71,10 @@
       </ImageView>
       <TableView fx:id="caseTableView" layoutX="187.0" layoutY="78.0" prefHeight="325.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <columns>
-          <TableColumn prefWidth="102.0" text="CASE ID" />
-          <TableColumn prefWidth="133.0" text="CLIENT NAME" />
-            <TableColumn prefWidth="133.0" text="CASE TYPE" />
-            <TableColumn prefWidth="133.0" text="CASE DETAILS" />
+          <TableColumn fx:id="idColumn" prefWidth="102.0" text="CASE ID" />
+          <TableColumn fx:id="nameColum" prefWidth="133.0" text="CLIENT NAME" />
+            <TableColumn fx:id="caseType" prefWidth="133.0" text="CASE TYPE" />
+            <TableColumn fx:id="caseDetails" prefWidth="341.0" text="CASE DETAILS" />
         </columns>
       </TableView>
       <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="765.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">

@@ -5,24 +5,24 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.UNodashboardSceneController">
+<AnchorPane id="AnchorPane" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="400.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.UNODashboardSceneController">
    <children>
-      <ImageView fitHeight="80.0" fitWidth="763.0" layoutX="500.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <image>
-            <Image url="@../image/bdflag.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="341.0" fitWidth="841.0" layoutX="133.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="341.0" fitWidth="841.0" layoutX="123.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/landd.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="60.0" fitWidth="85.0" layoutX="809.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <ImageView fitHeight="80.0" fitWidth="763.0" layoutX="490.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/bdflag.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="85.0" layoutX="799.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <image>
             <Image url="@../image/bangladeshsarkarlogo.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="135.0" style="-fx-background-color: b5e2fa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="839.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="400.0" prefWidth="135.0" style="-fx-background-color: b5e2fa;">
          <children>
             <Button layoutX="2.0" layoutY="115.0" mnemonicParsing="false" onAction="#taxVeriButtonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Tax verification" textFill="WHITE" AnchorPane.leftAnchor="0.0" />
             <Button layoutX="6.0" layoutY="150.0" mnemonicParsing="false" onAction="#ownerShipTranButtonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Owenership transfer" textFill="WHITE" AnchorPane.leftAnchor="0.0" />
@@ -31,13 +31,13 @@
             <Button layoutX="24.0" layoutY="255.0" mnemonicParsing="false" onAction="#DdsapproButtonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Deeds approval" textFill="WHITE" AnchorPane.leftAnchor="0.0" />
             <Button layoutX="34.0" layoutY="290.0" mnemonicParsing="false" onAction="#profileButtonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="0.0" />
             <Button layoutX="44.0" layoutY="325.0" mnemonicParsing="false" onAction="#signOutbuttonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Sing out" textFill="WHITE" AnchorPane.leftAnchor="0.0" />
-            <Button layoutY="80.0" mnemonicParsing="false" onAction="#dashboardButtonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Dashboard" textFill="WHITE" />
          </children>
       </AnchorPane>
-      <ImageView fitHeight="79.0" fitWidth="297.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="79.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../image/banner.png" />
          </image>
       </ImageView>
+      <Button layoutY="80.0" mnemonicParsing="false" onAction="#dashbordButtonOnclick" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Dashboard" textFill="WHITE" />
    </children>
 </AnchorPane>
