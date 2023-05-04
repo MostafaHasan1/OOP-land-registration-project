@@ -73,7 +73,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 ObjectInputStream ois = null;
                 try {
                     
-                    x = new File("LawyerLoginData.bin");
+                    x = new File("lawlogin.bin");
                     fis = new FileInputStream(x);
                     ois = new ObjectInputStream(fis);
                     Lawyer l;
@@ -122,8 +122,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setHeaderText(null);
                     a.showAndWait();
                 }else if(idList.contains(lawid)&&passList.contains(lawpass)){
-                    
-                    Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
+                    Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("LawyerCasesScene.fxml"));
                     Scene lawyerMenuListScene = new Scene(lawyerMenuList);
                     Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
                     lawyerMenuListStage.setTitle("Welcome to Lawyer Dashboard!");
@@ -139,7 +138,8 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.showAndWait();
                 }
             
-        }else if(selectedItem == "UNO"){
+        }
+                else if(selectedItem == "UNO"){
                 String unoID = loginIDtxtF.getText();
                 String unoPass = loginPasswordField.getText();
                 ArrayList<String> unoIDlist = new ArrayList<String>();
@@ -181,7 +181,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.showAndWait();
                     
                 }else if(unoIDlist.contains(unoID)&&unoPassList.contains(unoPass)){
-                    Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNODashboardScene.fxml"));
+                    Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNodashboardScene.fxml"));
                     Scene creating_sceneofUNOdashb = new Scene(UNOdashboard_Link);
                     Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
                     creating_stage_for_uno.setTitle("Welcome to Upazila Nirbahi Officer Dashboard ");
@@ -194,8 +194,64 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setHeaderText(null);
                     a.showAndWait();
                 }
+            
+        }/*else if(selectedItem == "Lawyer"){
+                String lawID = loginIDtxtF.getText();
+                String lawPass = loginPasswordField.getText();
+                ArrayList<String> lawIDlist = new ArrayList<String>();
+                ArrayList<String> lawPassList = new ArrayList<String>();
+                File lawX = null;
+                FileInputStream lawFis = null;      
+                ObjectInputStream lawOis = null;
+                try {
+                    
+                    lawX = new File("LawyerLoginData.bin");
+                    lawFis = new FileInputStream(lawX);
+                    lawOis = new ObjectInputStream(lawFis);
+                    Lawyer l;
+                    try{
+                        while(true){
+                            l = (Lawyer)lawOis.readObject();
+                            String id = l.ID;
+                            String pass = l.pass;
+                            lawIDlist.add(id);
+                            lawPassList.add(pass);
+                        }
+                   
+                    }//end of nested try
+                    catch(Exception e){
+                    //
+                    }//nested catch     
+                 
+                    //outputTextArea.appendText("All objects are loaded successfully...\n");            
+                } catch (IOException ex) { } 
+                finally {
+                try {
+                    if(lawOis != null) lawOis.close();
+                } catch (IOException ex) { }
+                }if(lawID.trim().isEmpty() && lawPass.trim().isEmpty()){
+                    Alert a = new Alert(Alert.AlertType.INFORMATION);
+                    a.setTitle("Login status");
+                    a.setContentText("Provide your data to login to your Dashboard!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
+                    
+                }else if(lawIDlist.contains(lawID)&&lawPassList.contains(lawPass)){
+                    Parent lawdashboard_Link = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
+                    Scene  lawdashboardScene= new Scene(lawdashboard_Link);
+                    Stage creating_stage_for_law  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                    creating_stage_for_law.setTitle("Welcome to Lawyer Dashboard! ");
+                    creating_stage_for_law.setScene(lawdashboardScene);
+                    creating_stage_for_law.show();
+                }else{
+                    Alert a = new Alert(Alert.AlertType.ERROR);
+                    a.setTitle("Login status");
+                    a.setContentText("Incorrect username or password. Please try again!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
+                }
                 
-         }else if(selectedItem == "Surveyor"){
+         }*/else if(selectedItem == "Surveyor"){
                 String survoid = loginIDtxtF.getText();
                 String survopass = loginPasswordField.getText();
                 ArrayList<String> idList = new ArrayList<String>();
