@@ -194,7 +194,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setHeaderText(null);
                     a.showAndWait();
                 }
-<<<<<<< HEAD
+
             
         }/*else if(selectedItem == "Lawyer"){
                 String lawID = loginIDtxtF.getText();
