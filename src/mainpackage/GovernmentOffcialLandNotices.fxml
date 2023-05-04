@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.GovernmentOffcialLandNoticesController">
    <children>
       <ScrollBar layoutX="895.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="14.0" />
       <Separator layoutX="147.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
@@ -29,23 +29,23 @@
             <Font name="Symbol" size="30.0" />
          </font>
       </Text>
-      <TextArea layoutX="391.0" layoutY="265.0" prefHeight="101.0" prefWidth="190.0" text="December:" />
-      <TextArea layoutX="157.0" layoutY="265.0" prefHeight="101.0" prefWidth="190.0" text="November:" />
-      <TextArea layoutX="634.0" layoutY="265.0" prefHeight="101.0" prefWidth="190.0" text="January:" />
-      <TextArea layoutX="157.0" layoutY="384.0" prefHeight="101.0" prefWidth="190.0" text="Februray:" />
-      <TextArea layoutX="391.0" layoutY="384.0" prefHeight="101.0" prefWidth="190.0" text="March:" />
-      <TextArea layoutX="634.0" layoutY="383.0" prefHeight="101.0" prefWidth="190.0" text="April:" />
-      <Button layoutX="1.0" layoutY="478.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Document Approval" />
-      <Button layoutX="1.0" layoutY="256.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Registration" />
-      <Button layoutX="1.0" layoutY="423.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Notices" />
-      <Button layoutX="1.0" layoutY="394.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="User Access" />
-      <Button layoutX="1.0" layoutY="365.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Terms and Policies" />
-      <Button layoutX="1.0" layoutY="339.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Social Security Number" />
-      <Button layoutX="1.0" layoutY="281.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Pricing" />
-      <Button layoutX="1.0" layoutY="451.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Data Analysis" />
-      <Button layoutX="1.0" layoutY="310.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner Details" />
-      <Button layoutY="199.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Information" />
-      <Button layoutY="229.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner List" />
-      <Button layoutY="152.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="152.0" text="Home" />
+      <TextArea layoutX="391.0" layoutY="265.0" prefHeight="101.0" prefWidth="190.0" text="June:" />
+      <TextArea layoutX="157.0" layoutY="265.0" prefHeight="101.0" prefWidth="190.0" text="May" />
+      <TextArea layoutX="634.0" layoutY="265.0" prefHeight="101.0" prefWidth="190.0" text="July:" />
+      <TextArea layoutX="157.0" layoutY="384.0" prefHeight="101.0" prefWidth="190.0" text="August:" />
+      <TextArea layoutX="391.0" layoutY="384.0" prefHeight="101.0" prefWidth="190.0" text="September:" />
+      <TextArea layoutX="634.0" layoutY="383.0" prefHeight="101.0" prefWidth="190.0" text="October:" />
+      <Button layoutY="477.0" mnemonicParsing="false" onAction="#GoDocumentApp" prefHeight="29.0" prefWidth="152.0" text="Document Approval" />
+      <Button layoutY="255.0" mnemonicParsing="false" onAction="#GoLandReg" prefHeight="29.0" prefWidth="152.0" text="Land Registration" />
+      <Button layoutY="422.0" mnemonicParsing="false" onAction="#GoNotices" prefHeight="29.0" prefWidth="152.0" text="Notices" />
+      <Button layoutY="393.0" mnemonicParsing="false" onAction="#GoUser" prefHeight="29.0" prefWidth="152.0" text="User Access" />
+      <Button layoutY="364.0" mnemonicParsing="false" onAction="#GoTermsandPolicies" prefHeight="29.0" prefWidth="152.0" text="Terms and Policies" />
+      <Button layoutY="338.0" mnemonicParsing="false" onAction="#GoSocialSecurity" prefHeight="29.0" prefWidth="152.0" text="Social Security Number" />
+      <Button layoutY="280.0" mnemonicParsing="false" onAction="#GoLandPrice" prefHeight="29.0" prefWidth="152.0" text="Land Pricing" />
+      <Button layoutY="450.0" mnemonicParsing="false" onAction="#GoDataAna" prefHeight="29.0" prefWidth="152.0" text="Data Analysis" />
+      <Button layoutY="309.0" mnemonicParsing="false" onAction="#GoOwnerDt" prefHeight="29.0" prefWidth="152.0" text="Land Owner Details" />
+      <Button layoutX="-1.0" layoutY="198.0" mnemonicParsing="false" onAction="#GoLandInfo" prefHeight="29.0" prefWidth="152.0" text="Land Information" />
+      <Button layoutX="-1.0" layoutY="228.0" mnemonicParsing="false" onAction="#GoOwnerList" prefHeight="29.0" prefWidth="152.0" text="Land Owner List" />
+      <Button layoutX="-1.0" layoutY="151.0" mnemonicParsing="false" onAction="#GoDashOfficial" prefHeight="48.0" prefWidth="152.0" text="Home" />
    </children>
 </AnchorPane>

@@ -1,55 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.PropertyOwnerPropertyRegistrationDocumentsController">
    <children>
       <ScrollBar layoutX="896.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="14.0" />
       <Separator layoutX="148.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
-      <MenuButton centerShape="false" layoutY="319.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Others">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="196.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Information">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="221.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="News and Updates">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="246.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Ownership">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutY="296.0" mnemonicParsing="false" opacity="0.74" popupSide="LEFT" prefHeight="25.0" prefWidth="149.0" text="Documents">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </MenuButton>
       <ImageView fitHeight="193.0" fitWidth="744.0" layoutX="152.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../Banner-738x280_04.png" />
@@ -65,32 +28,19 @@
             <Font name="Symbol" size="30.0" />
          </font>
       </Text>
-      <ToggleButton contentDisplay="RIGHT" layoutX="21.0" layoutY="451.0" mnemonicParsing="false">
-         <graphic>
-            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../home.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </ToggleButton>
-      <ToggleButton contentDisplay="RIGHT" layoutX="92.0" layoutY="451.0" mnemonicParsing="false">
-         <graphic>
-            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../back.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </ToggleButton>
       <Button layoutX="588.0" layoutY="345.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="262.0" text="Download Land Registration " />
       <Button layoutX="192.0" layoutY="345.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="262.0" text="Download Police court clearence certificate" />
       <Text layoutX="175.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here you can download documents related to your property" wrappingWidth="383.73046875" />
-      <MenuButton centerShape="false" layoutY="272.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Registration">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Apply for registration" />
-            <MenuItem mnemonicParsing="false" text="Case to Lawyer" />
-         </items>
-      </MenuButton>
+      <Button layoutX="1.0" layoutY="255.0" mnemonicParsing="false" onAction="#GoTransactions" prefHeight="29.0" prefWidth="152.0" text="My Transactions" />
+      <Button layoutX="1.0" layoutY="422.0" mnemonicParsing="false" onAction="#GoMarketPlace" prefHeight="29.0" prefWidth="152.0" text="MarketPlace" />
+      <Button layoutX="1.0" layoutY="393.0" mnemonicParsing="false" onAction="#GoApplyReg" prefHeight="29.0" prefWidth="152.0" text="Apply for registration" />
+      <Button layoutX="1.0" layoutY="364.0" mnemonicParsing="false" onAction="#GoAuction" prefHeight="29.0" prefWidth="152.0" text="Sell/Auction" />
+      <Button layoutX="1.0" layoutY="338.0" mnemonicParsing="false" onAction="#GoReqVer" prefHeight="29.0" prefWidth="152.0" text="Request Verification" />
+      <Button layoutX="1.0" layoutY="280.0" mnemonicParsing="false" onAction="#GoFines" prefHeight="29.0" prefWidth="152.0" text="My Fines and Penalties" />
+      <Button layoutX="1.0" layoutY="450.0" mnemonicParsing="false" onAction="#GoHelp" prefHeight="29.0" prefWidth="152.0" text="Help for registration" />
+      <Button layoutX="-6.0" layoutY="309.0" mnemonicParsing="false" onAction="#GoRegDoc" prefHeight="29.0" prefWidth="159.0" text="Property Registration Doc" />
+      <Button layoutY="198.0" mnemonicParsing="false" onAction="#GoProperties" prefHeight="29.0" prefWidth="152.0" text="My Properties" />
+      <Button layoutY="228.0" mnemonicParsing="false" onAction="#GoRecords" prefHeight="29.0" prefWidth="152.0" text="My Records" />
+      <Button layoutY="151.0" mnemonicParsing="false" onAction="#GoDashPropOwner" prefHeight="48.0" prefWidth="152.0" text="Home" />
    </children>
 </AnchorPane>

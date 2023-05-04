@@ -97,6 +97,13 @@ public class ChooseUsertypeForSignupController implements Initializable {
                 bankRepesentativeStage2.setTitle("Bank representative");
                 bankRepesentativeStage2.setScene(bankRepesentativeScene2);
                 bankRepesentativeStage2.show();
+            case "Property Owner":
+                Parent psignup_Link = FXMLLoader.load(getClass().getResource("PropertyOwnerSignUpScene.fxml"));
+                Scene pSignupScene = new Scene(psignup_Link);
+                Stage pStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                pStage.setTitle("Property Owner singup");
+                pStage.setScene(pSignupScene);
+                pStage.show();
         }
     }
 

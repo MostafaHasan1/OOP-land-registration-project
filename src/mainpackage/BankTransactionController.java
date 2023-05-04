@@ -14,6 +14,7 @@ import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -92,7 +93,6 @@ public class BankTransactionController implements Initializable {
                                        bankTxTxText.getText()
                                     );
         txTableView.getItems().add(newTX); 
-    
         File ba = null;
             FileOutputStream fos = null;      
             ObjectOutputStream oos = null;  
@@ -126,41 +126,19 @@ public class BankTransactionController implements Initializable {
     }
     @FXML
     private void bankLoadPreviousDataButton(ActionEvent event) {
-                ArrayList<String> namelist = new ArrayList<String>();
-                ArrayList<String> idlist = new ArrayList<String>();
-                ArrayList<String> amountlist = new ArrayList<String>();
-                ArrayList<String> txldlist = new ArrayList<String>();
-                File x = null;
-                FileInputStream fis = null;      
-                ObjectInputStream ois = null;
-                try {
-                    
-                    x = new File("BankReprensentativeTransactionData.bin");
-                    fis = new FileInputStream(x);
-                    ois = new ObjectInputStream(fis);
-                    BTransaction b;
-                    try{
-                        while(true){
-                        b = (BTransaction)ois.readObject();
-                        String name = b.name;
-                        String ID = b.ID;
-                        String amount = b.amount;
-                        String TXID = b.TXID;                       
-                        namelist.add(name);
-                        idlist.add(ID);
-                        amountlist.add(amount);
-                        txldlist.add(TXID);
-                        }
-                    }//end of nested try
-                    catch(Exception e){
-                    }             
-                } catch (IOException ex) { } 
-                finally {
-                try {
-                    if(ois != null) ois.close();
-                } catch (IOException ex) { }
-                }
-                
-    }
+        ObservableList<BTransaction> observableList = FXCollections.observableArrayList();
 
-}
+        // Load data from binary file
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("BankReprensentativeTransactionData.bin"))) {
+            Object object = ois.readObject();
+            if (object instanceof List) {
+                List<BTransaction> a = (List<BTransaction>) object;
+                observableList.addAll(a);
+            }
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        txTableView.setItems(observableList);
+        System.out.println(observableList);
+    }   
+    }

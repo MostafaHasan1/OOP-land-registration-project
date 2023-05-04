@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.GovernmentOffcialTermsAndPoliciesController">
    <children>
       <ScrollBar layoutX="896.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="14.0" />
       <Separator layoutX="148.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
@@ -41,17 +41,17 @@
          </font>
       </Text>
       <Text layoutX="162.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your policy change request and reason" />
-      <Button layoutY="477.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Document Approval" />
-      <Button layoutY="255.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Registration" />
-      <Button layoutY="422.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Notices" />
-      <Button layoutY="393.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="User Access" />
-      <Button layoutY="364.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Terms and Policies" />
-      <Button layoutY="338.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Social Security Number" />
-      <Button layoutY="280.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Pricing" />
-      <Button layoutY="450.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Data Analysis" />
-      <Button layoutY="309.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner Details" />
-      <Button layoutX="-1.0" layoutY="198.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Information" />
-      <Button layoutX="-1.0" layoutY="228.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner List" />
-      <Button layoutX="-1.0" layoutY="151.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="152.0" text="Home" />
+      <Button layoutY="477.0" mnemonicParsing="false" onAction="#GoDocumentApp" prefHeight="29.0" prefWidth="152.0" text="Document Approval" />
+      <Button layoutY="255.0" mnemonicParsing="false" onAction="#GoLandReg" prefHeight="29.0" prefWidth="152.0" text="Land Registration" />
+      <Button layoutY="422.0" mnemonicParsing="false" onAction="#GoNotices" prefHeight="29.0" prefWidth="152.0" text="Notices" />
+      <Button layoutY="393.0" mnemonicParsing="false" onAction="#GoUser" prefHeight="29.0" prefWidth="152.0" text="User Access" />
+      <Button layoutY="364.0" mnemonicParsing="false" onAction="#GoTermsandPolicies" prefHeight="29.0" prefWidth="152.0" text="Terms and Policies" />
+      <Button layoutY="338.0" mnemonicParsing="false" onAction="#GoSocialSecurity" prefHeight="29.0" prefWidth="152.0" text="Social Security Number" />
+      <Button layoutY="280.0" mnemonicParsing="false" onAction="#GoLandPrice" prefHeight="29.0" prefWidth="152.0" text="Land Pricing" />
+      <Button layoutY="450.0" mnemonicParsing="false" onAction="#GoDataAna" prefHeight="29.0" prefWidth="152.0" text="Data Analysis" />
+      <Button layoutY="309.0" mnemonicParsing="false" onAction="#GoOwnerDt" prefHeight="29.0" prefWidth="152.0" text="Land Owner Details" />
+      <Button layoutX="-1.0" layoutY="198.0" mnemonicParsing="false" onAction="#GoLandInfo" prefHeight="29.0" prefWidth="152.0" text="Land Information" />
+      <Button layoutX="-1.0" layoutY="228.0" mnemonicParsing="false" onAction="#GoOwnerList" prefHeight="29.0" prefWidth="152.0" text="Land Owner List" />
+      <Button layoutX="-1.0" layoutY="151.0" mnemonicParsing="false" onAction="#GoDashOfficial" prefHeight="48.0" prefWidth="152.0" text="Home" />
    </children>
 </AnchorPane>
