@@ -14,14 +14,15 @@ import java.io.Serializable;
  * @author akash
  */
 public class BankMortgage implements Serializable{
-    protected String name,Id,Value,Loan;
+    protected String name,ID,Value,Loan;
 
-    public BankMortgage(String name, String Id, String Amount, String Loan) {
+    public BankMortgage(String name, String ID, String Value, String Loan) {
         this.name = name;
-        this.Id = Id;
+        this.ID = ID;
         this.Value = Value;
         this.Loan = Loan;
     }
+
 
     public String getName() {
         return name;
@@ -31,19 +32,19 @@ public class BankMortgage implements Serializable{
         this.name = name;
     }
 
-    public String getId() {
-        return Id;
+    public String getID() {
+        return ID;
     }
 
-    public void setId(String Id) {
-        this.Id = Id;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
-    public String getAmount() {
+    public String getValue() {
         return Value;
     }
 
-    public void setAmount(String Amount) {
+    public void setValue(String Value) {
         this.Value = Value;
     }
 
@@ -55,8 +56,9 @@ public class BankMortgage implements Serializable{
         this.Loan = Loan;
     }
 
+    @Override
+    public String toString() {
+        return "BankMortgage{" + "name=" + name + ", ID=" + ID + ", Value=" + Value + ", Loan=" + Loan + '}';
+    }
     
-    
-    
-   
 }
