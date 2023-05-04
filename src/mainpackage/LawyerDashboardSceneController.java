@@ -27,13 +27,6 @@ import javafx.stage.Stage;
  * @author Hasan
  */
 public class LawyerDashboardSceneController implements Initializable {
-
-    private ListView<String> lawyerEventList;
-    @FXML    private Label counterOf_inprogress;
-    @FXML    private Label counterOf_inpainding;
-    
-    
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
@@ -50,31 +43,46 @@ public class LawyerDashboardSceneController implements Initializable {
     }
 
     @FXML
-    private void casesButtonOnclick(ActionEvent event) {
+    private void casesButtonOnclick(ActionEvent event) throws IOException {
+        
     }
 
     @FXML
-    private void clintMessageButtonOnclick(ActionEvent event) {
+    private void clintMessageButtonOnclick(ActionEvent event) throws IOException {
+        
     }
 
     @FXML
-    private void governmentNoticesButtonOnclick(ActionEvent event) {
+    private void governmentNoticesButtonOnclick(ActionEvent event) throws IOException {
+        
     }
 
     @FXML
-    private void transactionButtonOnlick(ActionEvent event) {
+    private void transactionButtonOnlick(ActionEvent event) throws IOException {
+        
     }
 
     @FXML
-    private void queryButtonOnlick(ActionEvent event) {
+    private void queryButtonOnlick(ActionEvent event) throws IOException {
+        
     }
 
     @FXML
-    private void profileButtonOnclick(ActionEvent event) {
+    private void profileButtonOnclick(ActionEvent event) throws IOException {
+        
     }
 
     @FXML
-    private void signoutButtonOnclick(ActionEvent event) {
+    private void signoutButtonOnclick(ActionEvent event) throws IOException {
+        Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
+        Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
+        Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        creating_stage_for_mainLogScene.setTitle("Welcome to digital land registration platform!");
+        creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
+        creating_stage_for_mainLogScene.show();
     }
+
+    
+
     
 }
