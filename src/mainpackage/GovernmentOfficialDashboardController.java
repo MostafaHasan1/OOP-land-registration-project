@@ -20,46 +20,6 @@ import javafx.scene.input.MouseEvent;
  */
 public class GovernmentOfficialDashboardController implements Initializable {
 
-    @FXML
-    private MenuButton LandMenuButton;
-<<<<<<< HEAD
-    @FXML
-    private MenuButton OthersMenuButton;
-    @FXML
-    private MenuButton LandOwnerMenuButton;
-    @FXML
-    private MenuButton SecurityMenuButton;
-    @FXML
-    private MenuButton InformationMenuButton;
-    @FXML
-    private MenuButton DocumentsMenuButton;
-    @FXML
-    private MenuItem SubLandInformation;
-    @FXML
-    private MenuItem SubLandRegistration;
-    @FXML
-    private MenuItem SubLandOwnerList;
-    @FXML
-    private MenuItem SubLandOwnerDetails;
-    @FXML
-    private MenuItem SubSocialSecurityNumber;
-    @FXML
-    private MenuItem SubUserAccess;
-    @FXML
-    private MenuItem SubLandPricing;
-    @FXML
-    private MenuItem SubDataAnalysis;
-    @FXML
-    private MenuItem SubDocumentApproval;
-    @FXML
-    private MenuItem SubNotices;
-    @FXML
-    private MenuItem SubTermsandPolicies;
-=======
-    
-    
->>>>>>> 1f105aa04745190854227eceadd6685b6d34cfb1
-
     /**
      * Initializes the controller class.
      */
@@ -69,8 +29,5 @@ public class GovernmentOfficialDashboardController implements Initializable {
 
     }
 
-    @FXML
-    private void pop(MouseEvent event) {
-    }
 
 }

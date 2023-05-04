@@ -76,6 +76,13 @@ public class ChooseUsertypeForSignupController implements Initializable {
                 creating_stage_for_uno.setTitle("UNO singupScene");
                 creating_stage_for_uno.setScene(creating_sceneofUNOsignup);
                 creating_stage_for_uno.show();
+            case "Government Official":
+                Parent govsignup_Link = FXMLLoader.load(getClass().getResource("GovernmentOfficialSignUpScene.fxml"));
+                Scene govSignupScene = new Scene(govsignup_Link);
+                Stage govStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                govStage.setTitle("Government Officials singup");
+                govStage.setScene(govSignupScene);
+                govStage.show();
             case "Surveyor":
                 Parent surveyorSignUp = FXMLLoader.load(getClass().getResource("SurveyorSignUpScene.fxml"));
                 Scene surveyorSignUpScene2 = new Scene(surveyorSignUp);

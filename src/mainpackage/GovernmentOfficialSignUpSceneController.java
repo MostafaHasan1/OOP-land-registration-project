@@ -7,7 +7,6 @@ package mainpackage;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -24,14 +23,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -39,50 +32,39 @@ import javafx.stage.Stage;
  *
  * @author Hasan
  */
-public class LawyerSignupSceneController implements Initializable {
+public class GovernmentOfficialSignUpSceneController implements Initializable {
 
-    @FXML    private TextField lawyerName;
-    @FXML    private TextField lawyerEmail;
-    @FXML    private TextField lawyerPhoneNumber;
-    @FXML    private TextField lawyerID;
-    @FXML    private TextField lawyerNIDnumber;
-    @FXML    private ComboBox<String> lawyerDivisionCombobox;
-    @FXML    private RadioButton maleRadioButton;
-    @FXML    private RadioButton femaleRadioButton;
-    @FXML    private RadioButton otherRadioButton;
-    @FXML    private TextField lawyerDistrict;
-    @FXML    private PasswordField lawyerPass;
-    @FXML    private DatePicker lawyerDOB;
-    @FXML    private TextField lawyerCourtName;
-    @FXML    private ComboBox<String> lawyerExperienceYearCombobox;
-    @FXML    private DatePicker lawyerDOJ;
-    //private String id;
-    //private String pass;
-    
-    
-    private ToggleGroup tg;
+    @FXML
+    private TextField nameTxtF;
+    @FXML
+    private TextField phnNumTxtF;
+    @FXML
+    private TextField nidTxtF;
+    @FXML
+    private TextField dvisionTxtF;
+    @FXML
+    private TextField mailTxtF;
+    @FXML
+    private TextField passTxtF;
+    @FXML
+    private DatePicker datePker;
+    @FXML
+    private TextField idTxtF;
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        lawyerDivisionCombobox.getItems().addAll(
-                "Barisal", "Chattogram", "Dhaka", "Khulna", 
-                "Mymensingh", "Rajshahi", "Rangpur", "Sylhet");
-        lawyerExperienceYearCombobox.getItems().addAll("1", "2", "3", "4", "5", "6+");
-        
-        tg = new ToggleGroup();
-        maleRadioButton.setToggleGroup(tg);
-        femaleRadioButton.setToggleGroup(tg);
-        otherRadioButton.setToggleGroup(tg);
+        // TODO
     }    
 
+
     @FXML
-    private void lawyerSignupButtonOnClick(ActionEvent event) throws IOException {
-        
-        if(lawyerName.getText().isEmpty() && lawyerEmail.getText().isEmpty() && lawyerPhoneNumber.getText().isEmpty() && lawyerID.getText().isEmpty()||
-          lawyerDOJ.getValue().toString().isEmpty() && lawyerDistrict.getText().isEmpty() && lawyerPass.getText().isEmpty() && 
-          lawyerDOB.getValue().toString().isEmpty() && lawyerNIDnumber.getText().isEmpty()){
+    private void submitButtonClick(ActionEvent event) throws IOException {
+        if(nameTxtF.getText().isEmpty() && passTxtF.getText().isEmpty() && phnNumTxtF.getText().isEmpty() && idTxtF.getText().isEmpty()||
+          datePker.getValue().toString().isEmpty() && dvisionTxtF.getText().isEmpty() && mailTxtF.getText().isEmpty() && 
+          nidTxtF.getText().isEmpty()){
         Alert a = new Alert(Alert.AlertType.ERROR);
         a.setTitle("Signup status");
         a.setContentText("Fill up all the Text Fields");
@@ -90,11 +72,11 @@ public class LawyerSignupSceneController implements Initializable {
         a.showAndWait();
         
      }else{
-            File f = null;
+        /*File f = null;
         FileOutputStream fos = null;      
         ObjectOutputStream oos = null;  
         try {
-            f = new File("LawyerMainData.bin");
+            f = new File("GovernmentOfficialsMainData.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);                
@@ -103,11 +85,11 @@ public class LawyerSignupSceneController implements Initializable {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);               
             }
-            Lawyer l = new Lawyer(
-                lawyerName.getText(),lawyerID.getText(),Integer.parseInt(lawyerNIDnumber.getText()),
-                lawyerEmail.getText(),lawyerPhoneNumber.getText()    
+            GOVofficials g = new GOVofficials(
+                nameTxtF.getText(),idTxtF.getText(),Integer.parseInt(nidTxtF.getText()),
+                mailTxtF.getText(),phnNumTxtF.getText()    
             );
-            oos.writeObject(l);
+            oos.writeObject(g);
 
         } catch (IOException ex) {
             Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
@@ -117,15 +99,15 @@ public class LawyerSignupSceneController implements Initializable {
             } catch (IOException ex) {
                 Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+        }*/
         // -----------------------------------------------------------------
         
-        // for reading data from lawyeLoginData binary file          
+       /* // for reading data from lawyeLoginData binary file          
         File x = null;
         FileInputStream fis = null;      
         ObjectInputStream ois = null;
         try {
-            x = new File("LawyerLoginData.bin");
+            x = new File("GovernmentOfficialLoginData.bin");
             fis = new FileInputStream(x);
             ois = new ObjectInputStream(fis);
             Lawyer l;
@@ -137,7 +119,7 @@ public class LawyerSignupSceneController implements Initializable {
                     //Object obj = ois.readObject();
                     //obj.submitReport();
                     //emp.submitReport();
-                    System.out.println("Lawyer Data:");
+                    System.out.println("Govenment login Data:");
                     System.out.println(l.ID);
                     System.out.println(l.pass);
                     //outputTextArea.appendText(emp.toString());
@@ -154,14 +136,14 @@ public class LawyerSignupSceneController implements Initializable {
             } catch (IOException ex) { }
         }
         
-        }
+        }*/
         
         //creating a binary file for login parpose
         File f = null;
         FileOutputStream fos = null;      
         ObjectOutputStream oos = null;  
         try {
-            f = new File("LawyerLoginData.bin");
+            f = new File("GovernmentOfficialsLoginData.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);                
@@ -170,11 +152,11 @@ public class LawyerSignupSceneController implements Initializable {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);               
             }
-            Lawyer l = new Lawyer(
-                lawyerID.getText(),
-                lawyerPass.getText()    
+            GOVofficials g = new GOVofficials(
+                idTxtF.getText(),
+                passTxtF.getText()    
             );
-            oos.writeObject(l);
+            oos.writeObject(g);
 
         } catch (IOException ex) {
             Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
@@ -185,7 +167,8 @@ public class LawyerSignupSceneController implements Initializable {
                 Logger.getLogger(LawyerSignupSceneController.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        // -----------------------------------------------------------------
+        
+  /*      // -----------------------------------------------------------------
         
         // for reading data from lawyeLoginData binary file          
         File x = null;
@@ -220,8 +203,8 @@ public class LawyerSignupSceneController implements Initializable {
                 if(ois != null) ois.close();
             } catch (IOException ex) { }
         }
-        
-                
+        */
+        }       
                 
         Alert a = new Alert(Alert.AlertType.INFORMATION);
         a.setTitle("Signup status");
@@ -235,19 +218,6 @@ public class LawyerSignupSceneController implements Initializable {
         creating_stage_for_mainLogScene.setTitle("Land Registration Main Scene");
         creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
         creating_stage_for_mainLogScene.show();
-            
-    }
-        
-    
-
-    @FXML
-    private void backButtononClick(MouseEvent event) throws IOException {
-        Parent chooseUsertype_signup = FXMLLoader.load(getClass().getResource("chooseUsertypeForSignup.fxml"));
-        Scene chooseUsertype_signupScene = new Scene(chooseUsertype_signup);
-        Stage chooseUsertype_signupStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        chooseUsertype_signupStage.setTitle("Welcome to digital land registration platform!");
-        chooseUsertype_signupStage.setScene(chooseUsertype_signupScene);
-        chooseUsertype_signupStage.show();
     }
     
 }

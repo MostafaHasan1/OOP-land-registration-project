@@ -78,7 +78,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lawyerNamelLabel" layoutX="273.0" layoutY="118.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: black;" />
+      <Label fx:id="lawyerNamelLabel" layoutX="273.0" layoutY="118.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: black;" textFill="WHITE" />
       <Label fx:id="lawyerNIDlabel" layoutX="273.0" layoutY="158.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: black;" />
       <Label layoutX="217.0" layoutY="201.0" text="SE ID :">
          <font>
@@ -86,12 +86,12 @@
          </font>
       </Label>
       <Label fx:id="lawyerIDLabel" layoutX="273.0" layoutY="197.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: black;" />
-      <Label layoutX="217.0" layoutY="246.0" text="Date of Birth : ">
+      <Label layoutX="217.0" layoutY="246.0" text="Mobile Num :">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lawyerDobLabel" layoutX="306.0" layoutY="243.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: black;" />
+      <Label fx:id="mobileNumlabel" layoutX="325.0" layoutY="243.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: black;" />
       <Label layoutX="217.0" layoutY="291.0" onMouseClicked="#changePassTXTonClick" text="Change password---&gt;" />
    </children>
 </AnchorPane>

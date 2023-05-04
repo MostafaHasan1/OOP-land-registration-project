@@ -38,7 +38,7 @@ public class LawyerProfileSceneController implements Initializable {
     @FXML
     private Label lawyerIDLabel;
     @FXML
-    private Label lawyerDobLabel;
+    private Label mobileNumlabel;
 
     /**
      * Initializes the controller class.

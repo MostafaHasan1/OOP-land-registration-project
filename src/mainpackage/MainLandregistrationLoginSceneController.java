@@ -122,6 +122,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setHeaderText(null);
                     a.showAndWait();
                 }else if(idList.contains(lawid)&&passList.contains(lawpass)){
+                    
                     Parent lawyerMenuList = FXMLLoader.load(getClass().getResource("lawyerDashboardScene.fxml"));
                     Scene lawyerMenuListScene = new Scene(lawyerMenuList);
                     Stage lawyerMenuListStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -175,7 +176,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 }if(unoID.trim().isEmpty() && unoPass.trim().isEmpty()){
                     Alert a = new Alert(Alert.AlertType.INFORMATION);
                     a.setTitle("Login status");
-                    a.setContentText("Provide your data to login your Dashboard!");
+                    a.setContentText("Provide your data to login to your Dashboard!");
                     a.setHeaderText(null);
                     a.showAndWait();
                     
@@ -183,7 +184,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNODashboardScene.fxml"));
                     Scene creating_sceneofUNOdashb = new Scene(UNOdashboard_Link);
                     Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                    creating_stage_for_uno.setTitle("Welcome Upazila Nirbahi Officer Dashboard ");
+                    creating_stage_for_uno.setTitle("Welcome to Upazila Nirbahi Officer Dashboard ");
                     creating_stage_for_uno.setScene(creating_sceneofUNOdashb);
                     creating_stage_for_uno.show();
                 }else{
@@ -353,6 +354,61 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setContentText("Incorrect username or password. Please try again!");
                     a.setHeaderText(null);
                     a.showAndWait();             
+                }
+           } else if(selectedItem == "Government Official"){
+                String govID = loginIDtxtF.getText();
+                String govPass = loginPasswordField.getText();
+                ArrayList<String> govIDlist = new ArrayList<String>();
+                ArrayList<String> govPassList = new ArrayList<String>();
+                File govX = null;
+                FileInputStream govFis = null;      
+                ObjectInputStream govOis = null;
+                try {
+                    
+                    govX = new File("GovernmentOfficialsLoginData.bin");
+                    govFis = new FileInputStream(govX);
+                    govOis = new ObjectInputStream(govFis);
+                    GOVofficials g;
+                    try{
+                        while(true){
+                            g = (GOVofficials)govOis.readObject();
+                            String id = g.ID;
+                            String pass = g.pass;
+                            govIDlist.add(id);
+                            govPassList.add(pass);
+                        }
+                   
+                    }//end of nested try
+                    catch(Exception e){
+                    //
+                    }//nested catch     
+                 
+                    //outputTextArea.appendText("All objects are loaded successfully...\n");            
+                } catch (IOException ex) { } 
+                finally {
+                try {
+                    if(govOis != null) govOis.close();
+                } catch (IOException ex) { }
+                }if(govID.trim().isEmpty() && govPass.trim().isEmpty()){
+                    Alert a = new Alert(Alert.AlertType.INFORMATION);
+                    a.setTitle("Login status");
+                    a.setContentText("Provide your data to login your Dashboard!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
+                    
+                }else if(govIDlist.contains(govID)&&govPassList.contains(govPass)){
+                    Parent govdashboard_Link = FXMLLoader.load(getClass().getResource("GOVdashboard.fxml"));
+                    Scene creating_sceneofgovdashb = new Scene(govdashboard_Link);
+                    Stage creating_stage_for_gov  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                    creating_stage_for_gov.setTitle("Welcome to Governmet Official Dashboard ");
+                    creating_stage_for_gov.setScene(creating_sceneofgovdashb);
+                    creating_stage_for_gov.show();
+                }else{
+                    Alert a = new Alert(Alert.AlertType.ERROR);
+                    a.setTitle("Login status");
+                    a.setContentText("Incorrect username or password. Please try again!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
                 }
            }
      
