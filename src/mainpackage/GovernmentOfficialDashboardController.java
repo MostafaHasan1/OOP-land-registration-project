@@ -10,6 +10,8 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -18,18 +20,14 @@ import javafx.scene.control.MenuButton;
  */
 public class GovernmentOfficialDashboardController implements Initializable {
 
-    @FXML
-    private MenuButton LandMenuButton;
-    
-    
-
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        
-    }    
-    
+
+    }
+
+
 }

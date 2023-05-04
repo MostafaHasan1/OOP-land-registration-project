@@ -194,6 +194,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setHeaderText(null);
                     a.showAndWait();
                 }
+<<<<<<< HEAD
             
         }/*else if(selectedItem == "Lawyer"){
                 String lawID = loginIDtxtF.getText();
@@ -216,6 +217,29 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                             String pass = l.pass;
                             lawIDlist.add(id);
                             lawPassList.add(pass);
+=======
+    } else if(selectedItem == "GovernmentOfficial"){
+                String govID = loginIDtxtF.getText();
+                String govPass = loginPasswordField.getText();
+                ArrayList<String> govIDlist = new ArrayList<String>();
+                ArrayList<String> govPassList = new ArrayList<String>();
+                File govX = null;
+                FileInputStream govFis = null;      
+                ObjectInputStream govOis = null;
+                try {
+                    
+                    govX = new File("GOVLoginData.bin");
+                    govFis = new FileInputStream(govX);
+                    govOis = new ObjectInputStream(govFis);
+                    GovernmentOfficial a;
+                    try{
+                        while(true){
+                            a = (GovernmentOfficial)govOis.readObject();
+                            String id = a.ID;
+                            String pass = a.pass;
+                            govIDlist.add(id);
+                            govPassList.add(pass);
+>>>>>>> 39a242c746e833e902f3ce7b7ee12ff691db03c6
                         }
                    
                     }//end of nested try
@@ -227,6 +251,7 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 } catch (IOException ex) { } 
                 finally {
                 try {
+<<<<<<< HEAD
                     if(lawOis != null) lawOis.close();
                 } catch (IOException ex) { }
                 }if(lawID.trim().isEmpty() && lawPass.trim().isEmpty()){
@@ -249,6 +274,26 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setContentText("Incorrect username or password. Please try again!");
                     a.setHeaderText(null);
                     a.showAndWait();
+=======
+                if(govFis != null) govOis.close();
+                } catch (IOException ex) {
+                }
+                
+                }if(govID.trim().isEmpty() && govPass.trim().isEmpty()){
+                    Alert a = new Alert(Alert.AlertType.INFORMATION);
+                    a.setTitle("Login status");
+                    a.setContentText("Provide your data to login your Dashboard!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
+                          
+                }else if(govIDlist.contains(govID)&&govPassList.contains(govPass)){
+                    Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNODashboardScene.fxml"));
+                    Scene creating_sceneofUNOdashb = new Scene(UNOdashboard_Link);
+                    Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                    creating_stage_for_uno.setTitle("Welcome Upazila Nirbahi Officer Dashboard ");
+                    creating_stage_for_uno.setScene(creating_sceneofUNOdashb);
+                    creating_stage_for_uno.show();
+>>>>>>> 39a242c746e833e902f3ce7b7ee12ff691db03c6
                 }
                 
          }*/else if(selectedItem == "Surveyor"){
@@ -303,7 +348,9 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     a.setContentText("Incorrect username or password. Please try again!");
                     a.setHeaderText(null);
                     a.showAndWait();
-                }    
+
+                }
+                 
            }else if(selectedItem == "Bank representative"){
                 String bankid = loginIDtxtF.getText();
                 String bankpass = loginPasswordField.getText();

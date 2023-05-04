@@ -96,7 +96,7 @@
       <Text layoutX="172.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the following details. We will get in touch with you with further details and instructions:" wrappingWidth="310.724609375" />
       <Text layoutX="176.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name:" />
       <Text layoutX="381.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" />
-      <Text layoutX="176.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" />
+      <Text layoutX="176.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID" />
       <Text layoutX="352.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+880" />
       <TextField layoutX="172.0" layoutY="331.0" />
       <TextField layoutX="381.0" layoutY="331.0" />
@@ -105,6 +105,8 @@
       <TextField layoutX="172.0" layoutY="459.0" />
       <ComboBox layoutX="380.0" layoutY="398.0" prefWidth="150.0" />
       <Text layoutX="176.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City/Area:" />
-      <Button layoutX="427.0" layoutY="459.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Submit" />
+      <Button layoutX="557.0" layoutY="459.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Submit" />
+      <Text layoutX="384.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Number:" />
+      <TextField layoutX="380.0" layoutY="459.0" />
    </children>
 </AnchorPane>
