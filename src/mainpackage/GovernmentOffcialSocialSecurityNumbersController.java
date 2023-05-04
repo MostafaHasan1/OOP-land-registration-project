@@ -65,7 +65,7 @@ public class GovernmentOffcialSocialSecurityNumbersController implements Initial
     }
 
     @FXML
-    private void GoLandReg(ActionEvent event) {
+    private void GoLandReg(ActionEvent event) throws IOException {
         Parent GoLandReg = FXMLLoader.load(getClass().getResource("GovernmentOffcialLandRegistrations.fxml"));
                     Scene GoLandRegScene = new Scene(GoLandReg);
                     Stage GoLandRegStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();

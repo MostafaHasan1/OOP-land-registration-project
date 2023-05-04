@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.SurveyorsSetBoundariesController">
+   <children>
+      <ImageView fitHeight="460.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/surlogo.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="54.0" layoutY="391.0" mnemonicParsing="false" onAction="#SurveyorsSetBoundariesBackButton" prefHeight="27.0" prefWidth="82.0" text="Back" />
+      <Label layoutX="296.0" layoutY="14.0" text="Set Boundaries" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField layoutX="95.0" layoutY="96.0" promptText="Property Owner Name" />
+      <TextField layoutX="282.0" layoutY="96.0" promptText="Land number" />
+      <TextField layoutX="470.0" layoutY="96.0" promptText="Lenght" />
+      <TextField layoutX="653.0" layoutY="96.0" promptText="Width" />
+      <TextField layoutX="95.0" layoutY="147.0" promptText="Area in sft" />
+      <TableView layoutX="162.0" layoutY="199.0" prefHeight="226.0" prefWidth="661.0">
+        <columns>
+          <TableColumn prefWidth="135.0" text="Property Owner Name" />
+          <TableColumn minWidth="0.0" prefWidth="76.0" text="ID" />
+            <TableColumn prefWidth="93.0" text="Lenght" />
+            <TableColumn prefWidth="121.0" text="Width" />
+            <TableColumn prefWidth="108.0" text="Area" />
+            <TableColumn prefWidth="127.0" text="Address" />
+        </columns>
+      </TableView>
+      <TextField layoutX="282.0" layoutY="147.0" promptText="Address" />
+      <Button layoutX="470.0" layoutY="146.0" mnemonicParsing="false" onAction="#SurveyorsSetBoundariesBackButton" prefHeight="27.0" prefWidth="149.0" text="Add Boundaraies Data" />
+      <Button layoutX="653.0" layoutY="146.0" mnemonicParsing="false" onAction="#SurveyorsSetBoundariesBackButton" prefHeight="27.0" prefWidth="149.0" text="Save data as PDF" />
+   </children>
+</AnchorPane>

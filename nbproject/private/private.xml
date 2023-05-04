@@ -3,8 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/ChooseUsertypeForSignupController.java</file>
+            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsAdvice.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/MainLandregistrationLoginSceneController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BTransaction.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankAccountDetailsController.java</file>
@@ -26,6 +26,7 @@
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsClientRequestController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/CheckLogin.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankPropertyOwnerInfoController.java</file>
+            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/GovernmentOfficial.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/Lawyer.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/ForgotPassCompletemessegeSceneController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankReprensentative.java</file>
@@ -33,19 +34,16 @@
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorSignUpSceneController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankMortgageController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsSetBoundaries.fxml</file>
+            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/GovernmentOffcialSocialSecurityNumbersController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsDashboardSceneController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsSetBoundariesController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankLienInfo.fxml</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/UNO.java</file>
+            <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankMortgage.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/SurveyorsClientRequest.fxml</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankAccountDetails.fxml</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/Bank_DashBoardController.java</file>
             <file>file:/C:/Users/akash/OneDrive/Desktop/OOP_NEW/OOP-land-registration-project/src/mainpackage/BankTransactionController.java</file>
-=======
-            <file>file:/C:/Users/moinu/OneDrive/Desktop/new%20oop%20project/OOP-land-registration-project/src/mainpackage/GovernmentOfficialLandOwnerDetailsController.java</file>
-            <file>file:/C:/Users/moinu/OneDrive/Desktop/new%20oop%20project/OOP-land-registration-project/src/mainpackage/MainLandregistrationLoginSceneController.java</file>
-            <file>file:/C:/Users/moinu/OneDrive/Desktop/new%20oop%20project/OOP-land-registration-project/src/mainpackage/PropertyOwnerSignUpScene.fxml</file>
->>>>>>> 6e3d6a72c67045c7940e7889412c9bfce49de031
         </group>
     </open-files>
 </project-private>

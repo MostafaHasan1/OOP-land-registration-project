@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.GovernmentOfficialLandOwnerDetailsController">
+   <children>
+      <Separator layoutX="148.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="7.0" />
+      <ImageView fitHeight="193.0" fitWidth="748.0" layoutX="152.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Banner-738x280_04.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="149.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../download.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="155.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Owner Details" wrappingWidth="273.634765625">
+         <font>
+            <Font name="Symbol" size="30.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="159.0" layoutY="263.0" prefHeight="214.0" prefWidth="517.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="830.0">
+               <children>
+                  <TableView prefHeight="438.0" prefWidth="831.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextArea layoutX="699.0" layoutY="266.0" prefHeight="93.0" prefWidth="200.0" text="This page contains the details of &#10;all the land owners. " wrapText="true" />
+      <Button layoutX="-1.0" layoutY="477.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Document Approval" />
+      <Button layoutX="-1.0" layoutY="255.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Registration" />
+      <Button layoutX="-1.0" layoutY="422.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Notices" />
+      <Button layoutX="-1.0" layoutY="393.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="User Access" />
+      <Button layoutX="-1.0" layoutY="364.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Terms and Policies" />
+      <Button layoutX="-1.0" layoutY="338.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Social Security Number" />
+      <Button layoutX="-1.0" layoutY="280.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Pricing" />
+      <Button layoutX="-1.0" layoutY="450.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Data Analysis" />
+      <Button layoutX="-1.0" layoutY="309.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner Details" />
+      <Button layoutX="-2.0" layoutY="198.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Information" />
+      <Button layoutX="-2.0" layoutY="228.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner List" />
+      <Button layoutX="-2.0" layoutY="151.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="152.0" text="Home" />
+   </children>
+</AnchorPane>

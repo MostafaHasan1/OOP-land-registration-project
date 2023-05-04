@@ -207,12 +207,12 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     govX = new File("GOVLoginData.bin");
                     govFis = new FileInputStream(govX);
                     govOis = new ObjectInputStream(govFis);
-                    UNO u;
+                    GovernmentOfficial a;
                     try{
                         while(true){
-                            gov = (GovernmentOfficial)govOis.readObject();
-                            String id = gov.ID;
-                            String pass = gov.pass;
+                            a = (GovernmentOfficial)govOis.readObject();
+                            String id = a.ID;
+                            String pass = a.pass;
                             govIDlist.add(id);
                             govPassList.add(pass);
                         }
@@ -226,24 +226,25 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 } catch (IOException ex) { } 
                 finally {
                 try {
-                    if(unoOis != null) unoOis.close();
-                } catch (IOException ex) { }
-                }if(unoID.trim().isEmpty() && unoPass.trim().isEmpty()){
+                if(govFis != null) govOis.close();
+                } catch (IOException ex) {
+                }
+                
+                }if(govID.trim().isEmpty() && govPass.trim().isEmpty()){
                     Alert a = new Alert(Alert.AlertType.INFORMATION);
                     a.setTitle("Login status");
                     a.setContentText("Provide your data to login your Dashboard!");
                     a.setHeaderText(null);
                     a.showAndWait();
-                    
-                }else if(unoIDlist.contains(unoID)&&unoPassList.contains(unoPass)){
+                          
+                }else if(govIDlist.contains(govID)&&govPassList.contains(govPass)){
                     Parent UNOdashboard_Link = FXMLLoader.load(getClass().getResource("UNODashboardScene.fxml"));
                     Scene creating_sceneofUNOdashb = new Scene(UNOdashboard_Link);
                     Stage creating_stage_for_uno  = (Stage) ((Node)event.getSource()).getScene().getWindow();
                     creating_stage_for_uno.setTitle("Welcome Upazila Nirbahi Officer Dashboard ");
                     creating_stage_for_uno.setScene(creating_sceneofUNOdashb);
                     creating_stage_for_uno.show();
-                }else{
-=======
+                }
                 
          }else if(selectedItem == "Surveyor"){
                 String survoid = loginIDtxtF.getText();
@@ -292,16 +293,14 @@ public class MainLandregistrationLoginSceneController implements Initializable {
             
                 }
                 else {
->>>>>>> 1f105aa04745190854227eceadd6685b6d34cfb1
                     Alert a = new Alert(Alert.AlertType.ERROR);
                     a.setTitle("Login status");
                     a.setContentText("Incorrect username or password. Please try again!");
                     a.setHeaderText(null);
                     a.showAndWait();
-<<<<<<< HEAD
+
                 }
-=======
-                }    
+                 
            }else if(selectedItem == "Bank representative"){
                 String bankid = loginIDtxtF.getText();
                 String bankpass = loginPasswordField.getText();
@@ -413,7 +412,6 @@ public class MainLandregistrationLoginSceneController implements Initializable {
            }
      
     
->>>>>>> 1f105aa04745190854227eceadd6685b6d34cfb1
         /*switch(selectedItem){
             case "Lawyer":
                 /*Lawyer c = new Lawyer(
