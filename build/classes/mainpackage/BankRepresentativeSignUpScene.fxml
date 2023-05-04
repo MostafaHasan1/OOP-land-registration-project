@@ -40,24 +40,24 @@
                         <Font name="Georgia Italic" size="24.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="85.0" layoutY="110.0" promptText="Name" />
-                  <TextField layoutX="85.0" layoutY="152.0" promptText="NID" />
-                  <TextField layoutX="85.0" layoutY="191.0" promptText="Mobile Number" />
-                  <TextField layoutX="269.0" layoutY="110.0" promptText="Employee ID" />
-                  <TextField layoutX="269.0" layoutY="152.0" promptText="E-Mail Addrerss" />
-                  <DatePicker layoutX="443.0" layoutY="152.0" promptText="Date of Birth" />
-                  <Button layoutX="304.0" layoutY="245.0" mnemonicParsing="false" text="Sign Up">
+                  <TextField fx:id="bankNameText" layoutX="85.0" layoutY="110.0" promptText="Name" />
+                  <TextField fx:id="bankNIDText" layoutX="85.0" layoutY="152.0" promptText="NID" />
+                  <TextField fx:id="bankNumberText" layoutX="85.0" layoutY="191.0" promptText="Mobile Number" />
+                  <TextField fx:id="bankIDText" layoutX="269.0" layoutY="110.0" promptText="Employee ID" />
+                  <TextField fx:id="bankEmailText" layoutX="269.0" layoutY="152.0" promptText="E-Mail Addrerss" />
+                  <DatePicker fx:id="bankDateOB" layoutX="443.0" layoutY="152.0" promptText="Date of Birth" />
+                  <Button layoutX="304.0" layoutY="245.0" mnemonicParsing="false" onAction="#bankSignUpButton" text="Sign Up">
                      <font>
                         <Font name="Georgia" size="16.0" />
                      </font>
                   </Button>
-                  <PasswordField layoutX="269.0" layoutY="191.0" promptText="Password" />
+                  <PasswordField fx:id="bankPassText" layoutX="269.0" layoutY="191.0" promptText="Password" />
                   <ImageView fitHeight="68.0" fitWidth="89.0" layoutX="85.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../image/bank.png" />
                      </image>
                   </ImageView>
-                  <DatePicker layoutX="443.0" layoutY="110.0" promptText="Date of Joining" />
+                  <DatePicker fx:id="bankDateOF" layoutX="443.0" layoutY="110.0" promptText="Date of Joining" />
                </children>
             </AnchorPane>
         </items>
