@@ -17,6 +17,7 @@ public final class Lawyer extends User implements Serializable {
     protected String pass; */
     protected LocalDate doj;
     protected String courtName;
+    protected String email;
 
 /*    public Lawyer(LocalDate doj, String courtName) {
         this.doj = doj;
@@ -26,6 +27,14 @@ public final class Lawyer extends User implements Serializable {
     public Lawyer(String ID, String pass ){
         this.ID = ID;
         this.pass = pass;
+    }
+    public Lawyer(String Name, String ID, int nid, String email, String mobileNum ){
+        this.Name = Name;
+        this.ID = ID;
+        this.nid_num= nid;
+        this.email = email;
+        this.phone_number = mobileNum;
+                
     }
     
     public Lawyer(LocalDate doj, String courtName, String Name, int nid_num, String phone_number, String ID, String email, String pass, LocalDate dob) {
