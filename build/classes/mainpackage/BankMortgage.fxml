@@ -10,33 +10,32 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="mainpackage.BankMortgageController">
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.BankMortgageController">
    <children>
       <ImageView fitHeight="460.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/stone.png" />
          </image>
       </ImageView>
-      <Label layoutX="242.0" layoutY="14.0" text="Mortagage Proccessing">
+      <Label layoutX="242.0" layoutY="14.0" text="Mortgage Proccessing">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <TextField layoutX="94.0" layoutY="108.0" promptText="Name" />
-      <TextField layoutX="279.0" layoutY="108.0" promptText="ID" />
-      <TextField layoutX="462.0" layoutY="108.0" promptText="Property Value" />
-      <TextField layoutX="650.0" layoutY="108.0" promptText="Loan Amount" />
+      <TextField fx:id="bankMorgageName" layoutX="94.0" layoutY="108.0" promptText="Name" />
+      <TextField fx:id="bankMorgageId" layoutX="279.0" layoutY="108.0" promptText="ID" />
+      <TextField fx:id="bankMorgageValue" layoutX="462.0" layoutY="108.0" promptText="Property Value" />
+      <TextField fx:id="bankMortgageLoan" layoutX="650.0" layoutY="108.0" promptText="Loan Amount" />
       <Button layoutX="45.0" layoutY="402.0" mnemonicParsing="false" onAction="#BankMortgageBackButton" prefHeight="31.0" prefWidth="97.0" text="Back" />
-      <TableView layoutX="163.0" layoutY="218.0" prefHeight="200.0" prefWidth="598.0">
+      <TableView fx:id="liTableView" layoutX="163.0" layoutY="218.0" prefHeight="200.0" prefWidth="598.0">
         <columns>
-          <TableColumn prefWidth="152.0" text="Name" />
-          <TableColumn prefWidth="125.0" text="ID" />
-            <TableColumn prefWidth="190.0" text="Owned Property Value" />
-            <TableColumn prefWidth="130.0" text="Loan Amount" />
+          <TableColumn fx:id="tableName" prefWidth="152.0" text="Name" />
+          <TableColumn fx:id="tableId" prefWidth="125.0" text="ID" />
+            <TableColumn fx:id="tableOwnerValue" prefWidth="190.0" text="Owned Property Value" />
+            <TableColumn fx:id="tableLIenAmount" prefWidth="130.0" text="Loan Amount" />
         </columns>
       </TableView>
-      <Button layoutX="279.0" layoutY="166.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Add to Mortgage List" />
-      <Button layoutX="474.0" layoutY="166.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Save file as PDF" />
+      <Button layoutX="279.0" layoutY="166.0" mnemonicParsing="false" onAction="#AddMortgageListButton" prefHeight="31.0" prefWidth="149.0" text="Add to Mortgage List" />
+      <Button layoutX="474.0" layoutY="166.0" mnemonicParsing="false" onAction="#AddMortgagePDFButton" prefHeight="31.0" prefWidth="149.0" text="Save file as PDF" />
    </children>
 </AnchorPane>
