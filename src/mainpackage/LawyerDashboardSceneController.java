@@ -27,13 +27,6 @@ import javafx.stage.Stage;
  * @author Hasan
  */
 public class LawyerDashboardSceneController implements Initializable {
-
-    private ListView<String> lawyerEventList;
-    @FXML    private Label counterOf_inprogress;
-    @FXML    private Label counterOf_inpainding;
-    
-    
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
@@ -50,31 +43,82 @@ public class LawyerDashboardSceneController implements Initializable {
     }
 
     @FXML
-    private void casesButtonOnclick(ActionEvent event) {
+    private void casesButtonOnclick(ActionEvent event) throws IOException {
+        Parent caseSceneURL = FXMLLoader.load(getClass().getResource("LawyerCasesScene.fxml"));
+        Scene lawyerCaseScene = new Scene(caseSceneURL);
+        Stage caseSceneStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        caseSceneStage.setTitle("Cases");
+        caseSceneStage.setScene(lawyerCaseScene);
+        caseSceneStage.show();
+        
     }
 
     @FXML
-    private void clintMessageButtonOnclick(ActionEvent event) {
+    private void clintMessageButtonOnclick(ActionEvent event) throws IOException {
+        Parent clintMSgSceneURL = FXMLLoader.load(getClass().getResource("LawyerClintMegScene.fxml"));
+        Scene clintMsgScene = new Scene(clintMSgSceneURL);
+        Stage clintMsgStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        clintMsgStage.setTitle("Clint Messages");
+        clintMsgStage.setScene(clintMsgScene);
+        clintMsgStage.show();
+        
     }
 
     @FXML
-    private void governmentNoticesButtonOnclick(ActionEvent event) {
+    private void governmentNoticesButtonOnclick(ActionEvent event) throws IOException {
+        Parent govNoticURL = FXMLLoader.load(getClass().getResource("LaywerGovNotcScene.fxml"));
+        Scene govNoticScene = new Scene(govNoticURL);
+        Stage govNoticStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        govNoticStage.setTitle("Government Notice");
+        govNoticStage.setScene(govNoticScene);
+        govNoticStage.show();
+        
     }
 
     @FXML
-    private void transactionButtonOnlick(ActionEvent event) {
+    private void transactionButtonOnlick(ActionEvent event) throws IOException {
+        Parent transactionURL = FXMLLoader.load(getClass().getResource("LawyerTransactionScene.fxml"));
+        Scene transactionScene = new Scene(transactionURL);
+        Stage transactionSceneStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        transactionSceneStage.setTitle("Transaction");
+        transactionSceneStage.setScene(transactionScene);
+        transactionSceneStage.show();
+        
     }
 
     @FXML
-    private void queryButtonOnlick(ActionEvent event) {
+    private void queryButtonOnlick(ActionEvent event) throws IOException {
+        Parent querryURL = FXMLLoader.load(getClass().getResource("LawyerQueryScene.fxml"));
+        Scene querryScene = new Scene(querryURL);
+        Stage querryStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        querryStage.setTitle("Querry");
+        querryStage.setScene(querryScene);
+        querryStage.show();
+        
     }
 
     @FXML
-    private void profileButtonOnclick(ActionEvent event) {
+    private void profileButtonOnclick(ActionEvent event) throws IOException {
+        Parent profileURL = FXMLLoader.load(getClass().getResource("LawyerProfileScene.fxml"));
+        Scene profileScene = new Scene(profileURL);
+        Stage profileStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        profileStage.setTitle("Profile");
+        profileStage.setScene(profileScene);
+        profileStage.show();
+        
     }
 
     @FXML
-    private void signoutButtonOnclick(ActionEvent event) {
+    private void signoutButtonOnclick(ActionEvent event) throws IOException {
+        Parent mainLogin_Link = FXMLLoader.load(getClass().getResource("mainLandregistrationLoginScene.fxml"));
+        Scene creating_sceneofmainLogin = new Scene(mainLogin_Link);
+        Stage creating_stage_for_mainLogScene  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        creating_stage_for_mainLogScene.setTitle("Welcome to digital land registration platform!");
+        creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
+        creating_stage_for_mainLogScene.show();
     }
+
+    
+
     
 }

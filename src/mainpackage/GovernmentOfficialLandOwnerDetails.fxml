@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -33,62 +30,6 @@
             <Font name="Symbol" size="30.0" />
          </font>
       </Text>
-      <ToggleButton contentDisplay="RIGHT" layoutX="13.0" layoutY="447.0" mnemonicParsing="false">
-         <graphic>
-            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../home.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </ToggleButton>
-      <ToggleButton contentDisplay="RIGHT" layoutX="85.0" layoutY="447.0" mnemonicParsing="false">
-         <graphic>
-            <ImageView fitHeight="49.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../back.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </ToggleButton>
-      <MenuButton centerShape="false" layoutX="1.0" layoutY="311.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Others">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Notices" />
-            <MenuItem mnemonicParsing="false" text="Terms and Policies" />
-         </items>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </MenuButton>
-      <MenuButton fx:id="LandMenuButton" centerShape="false" layoutX="1.0" layoutY="188.0" mnemonicParsing="false" onMouseDragged="#pop" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Land">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Land Information" />
-            <MenuItem mnemonicParsing="false" text="Land Registration" />
-         </items>
-      </MenuButton>
-      <MenuButton fx:id="LandOwnerMenuButton" centerShape="false" layoutX="1.0" layoutY="213.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Land Owner">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Land Owner List" />
-            <MenuItem mnemonicParsing="false" text="Land Owner Details" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutX="1.0" layoutY="238.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Security">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Social Security Number" />
-            <MenuItem mnemonicParsing="false" text="User Access" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutX="1.0" layoutY="263.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Information">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Land Pricing " />
-            <MenuItem mnemonicParsing="false" text="Data Analysis" />
-         </items>
-      </MenuButton>
-      <MenuButton centerShape="false" layoutX="1.0" layoutY="288.0" mnemonicParsing="false" opacity="0.74" popupSide="RIGHT" prefHeight="25.0" prefWidth="149.0" text="Documents">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Document Approval" />
-         </items>
-      </MenuButton>
       <ScrollPane layoutX="159.0" layoutY="263.0" prefHeight="214.0" prefWidth="517.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="830.0">
@@ -104,5 +45,17 @@
         </content>
       </ScrollPane>
       <TextArea layoutX="699.0" layoutY="266.0" prefHeight="93.0" prefWidth="200.0" text="This page contains the details of &#10;all the land owners. " wrapText="true" />
+      <Button layoutX="-1.0" layoutY="477.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Document Approval" />
+      <Button layoutX="-1.0" layoutY="255.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Registration" />
+      <Button layoutX="-1.0" layoutY="422.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Notices" />
+      <Button layoutX="-1.0" layoutY="393.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="User Access" />
+      <Button layoutX="-1.0" layoutY="364.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Terms and Policies" />
+      <Button layoutX="-1.0" layoutY="338.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Social Security Number" />
+      <Button layoutX="-1.0" layoutY="280.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Pricing" />
+      <Button layoutX="-1.0" layoutY="450.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Data Analysis" />
+      <Button layoutX="-1.0" layoutY="309.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner Details" />
+      <Button layoutX="-2.0" layoutY="198.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Information" />
+      <Button layoutX="-2.0" layoutY="228.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Land Owner List" />
+      <Button layoutX="-2.0" layoutY="151.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="152.0" text="Home" />
    </children>
 </AnchorPane>

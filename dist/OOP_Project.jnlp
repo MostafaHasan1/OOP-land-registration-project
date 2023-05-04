@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="OOP_Project.jnlp">
+  <information>
+    <title>OOP_Project</title>
+    <vendor>Hasan</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
+    <jar href="OOP_Project.jar" size="3131993" download="eager" />
+=======
+<<<<<<< HEAD
+    <jar href="OOP_Project.jar" size="3122413" download="eager" />
+=======
+    <jar href="OOP_Project.jar" size="3121477" download="eager" />
+>>>>>>> 05421372516d028c1213cf221fec81002f4fe10e
+>>>>>>> d87ea41837e311478eb04f6d3df347a6a6f751f5
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="OOP_Project" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainpackage.mainApplicationClass"  name="OOP_Project" />
+  <update check="always"/>
+</jnlp>

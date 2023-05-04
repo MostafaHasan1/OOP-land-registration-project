@@ -22,6 +22,7 @@ public class GovernmentOfficialDashboardController implements Initializable {
 
     @FXML
     private MenuButton LandMenuButton;
+<<<<<<< HEAD
     @FXML
     private MenuButton OthersMenuButton;
     @FXML
@@ -54,6 +55,10 @@ public class GovernmentOfficialDashboardController implements Initializable {
     private MenuItem SubNotices;
     @FXML
     private MenuItem SubTermsandPolicies;
+=======
+    
+    
+>>>>>>> 1f105aa04745190854227eceadd6685b6d34cfb1
 
     /**
      * Initializes the controller class.

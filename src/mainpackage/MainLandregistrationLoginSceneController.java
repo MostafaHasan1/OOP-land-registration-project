@@ -242,12 +242,122 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                     creating_stage_for_uno.setScene(creating_sceneofUNOdashb);
                     creating_stage_for_uno.show();
                 }else{
+=======
+                
+         }else if(selectedItem == "Surveyor"){
+                String survoid = loginIDtxtF.getText();
+                String survopass = loginPasswordField.getText();
+                ArrayList<String> idList = new ArrayList<String>();
+                ArrayList<String> passList = new ArrayList<String>();
+                File x = null;
+                FileInputStream fis = null;      
+                ObjectInputStream ois = null;
+                try {
+                    
+                    x = new File("SurveyorLoginData.bin");
+                    fis = new FileInputStream(x);
+                    ois = new ObjectInputStream(fis);
+                    Surveyor s;
+                    try{
+                        while(true){
+                        s = (Surveyor)ois.readObject();
+                        String id = s.ID;
+                        String pass = s.pass;
+                        idList.add(id);
+                        passList.add(pass);
+                        }
+                    }//end of nested try
+                    catch(Exception e){
+                    }             
+                } catch (IOException ex) { } 
+                finally {
+                try {
+                    if(ois != null) ois.close();
+                } catch (IOException ex) { }
+                }
+                if (survoid.trim().isEmpty() && survopass.trim().isEmpty()) {
+                    Alert a = new Alert(Alert.AlertType.INFORMATION);
+                    a.setTitle("Login status");
+                    a.setContentText("Enter Login Data and Please Try Again!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
+                }else if(idList.contains(survoid)&&passList.contains(survopass)){
+                    Parent SurveyorSignIn = FXMLLoader.load(getClass().getResource("SurveyorsDashboardScene.fxml"));
+                    Scene SurveyorSignInScene = new Scene(SurveyorSignIn);
+                    Stage SurveyorSignInStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                    SurveyorSignInStage.setTitle("Welcome to Surveyor Dashboard!");
+                    SurveyorSignInStage.setScene(SurveyorSignInScene);
+                    SurveyorSignInStage.show();
+            
+                }
+                else {
+>>>>>>> 1f105aa04745190854227eceadd6685b6d34cfb1
                     Alert a = new Alert(Alert.AlertType.ERROR);
                     a.setTitle("Login status");
                     a.setContentText("Incorrect username or password. Please try again!");
                     a.setHeaderText(null);
                     a.showAndWait();
+<<<<<<< HEAD
                 }
+=======
+                }    
+           }else if(selectedItem == "Bank representative"){
+                String bankid = loginIDtxtF.getText();
+                String bankpass = loginPasswordField.getText();
+                ArrayList<String> idList = new ArrayList<String>();
+                ArrayList<String> passList = new ArrayList<String>();
+                File x = null;
+                FileInputStream fis = null;      
+                ObjectInputStream ois = null;
+                try {
+                    
+                    x = new File("BankReprensentativeLoginData.bin");
+                    fis = new FileInputStream(x);
+                    ois = new ObjectInputStream(fis);
+                    BankReprensentative b;
+                    try{
+                        while(true){
+                        b = (BankReprensentative)ois.readObject();
+                        String id = b.ID;
+                        String pass = b.pass;
+                        idList.add(id);
+                        passList.add(pass);
+                        }
+                    }//end of nested try
+                    catch(Exception e){
+                    }             
+                } catch (IOException ex) { } 
+                finally {
+                try {
+                    if(ois != null) ois.close();
+                } catch (IOException ex) { }
+                }
+                if (bankid.trim().isEmpty() && bankpass.trim().isEmpty()) {
+                    Alert a = new Alert(Alert.AlertType.INFORMATION);
+                    a.setTitle("Login status");
+                    a.setContentText("Enter Login Data and Please Try Again!");
+                    a.setHeaderText(null);
+                    a.showAndWait();
+                }else if(idList.contains(bankid)&&passList.contains(bankpass)){
+                    Parent BankSignIn = FXMLLoader.load(getClass().getResource("Bank_DashBoard.fxml"));
+                    Scene BankSignInScene = new Scene(BankSignIn);
+                    Stage BankSignInStage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                    BankSignInStage.setTitle("Welcome to Bank Reprensentative Dashboard!");
+                    BankSignInStage.setScene(BankSignInScene);
+                    BankSignInStage.show();
+            
+                }
+                else {
+                    Alert a = new Alert(Alert.AlertType.ERROR);
+                    a.setTitle("Login status");
+                    a.setContentText("Incorrect username or password. Please try again!");
+                    a.setHeaderText(null);
+                    a.showAndWait();             
+                }
+           }
+     
+    
+>>>>>>> 1f105aa04745190854227eceadd6685b6d34cfb1
         /*switch(selectedItem){
             case "Lawyer":
                 /*Lawyer c = new Lawyer(
@@ -444,9 +554,9 @@ public class MainLandregistrationLoginSceneController implements Initializable {
                 creating_stage_for_mainLogScene.setTitle("Welcome to digital land registration platform!");
                 creating_stage_for_mainLogScene.setScene(creating_sceneofmainLogin);
                 creating_stage_for_mainLogScene.show(); */
-                          
-        }
-    
+           }                         
+       
+
 
     @FXML
     private void signupButtonOnClick(MouseEvent event) throws IOException {
